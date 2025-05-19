@@ -1,5 +1,3 @@
-# Read ME
-
 # Campus Accessibility Navigation System with Facilities and Event Integration
 
 ## Project Overview
