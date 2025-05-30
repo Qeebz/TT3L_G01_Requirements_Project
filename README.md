@@ -1,5 +1,11 @@
 # Campus Accessibility Navigation System with Facilities and Event Integration
 
+## Group Members
+MUHAMMAD NAQIB BIN ZULL AZRI (1211112306)
+MUHAMMAD HARITH AIMAN BIN MUHD ZULKAPLI (1211112350)
+DHARVIN DARAN A/L ELANGOO (1231303548)
+GOH YENG XUN (1231303430)
+
 ## Project Overview
 This project focuses on building an accessibility-focused navigation system for a university campus. The system is designed to help users find the most accessible routes across campus by integrating with the university's:
 
