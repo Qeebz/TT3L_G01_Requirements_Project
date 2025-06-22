@@ -1475,7 +1475,7 @@ in this document.
 | **Session ID** | **Date and Time**     | **Technique** | **Section Reviewed**  | **Participant & Role**                                              | **No. of Defect** |
 |----------------|-----------------------|---------------|-----------------------|---------------------------------------------------------------------|-------------------|
 | VS-01          | 22/6/2025; 7am–1pm    | Inspection    | 3.1, 3.2, 3.3, 3.5    | Naqib                                                               | 4                 |
-| VS-00          | 3/6/2025; 2pm–6pm     | Inspection    | 3.4, 3.5              | Chen (Inspector), Dana (Author), Ben (Presenter), Alice (Inspector) | 5                 |
+| VS-00          | 3/6/2025; 2pm–6pm     | Inspection    | 3.4,              | Chen (Inspector), Dana (Author), Ben (Presenter), Alice (Inspector) | 5                 |
 
 
 ### **6.2 Defect Summary**
