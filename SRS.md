@@ -15,576 +15,157 @@ height="1.8333333333333333in"}
 
 ## **1. Introduction**
 
-Navigating a university campus can be challenging for individuals with
-mobility or accessibility needs, especially when faced with unexpected
-obstacles such as elevator outages, construction zones, or event-related
-route disruptions. To address this issue, the _Campus Accessibility
-Navigation System with Facilities and Event Integration_ aims to provide
-an intelligent, real-time navigation solution designed specifically for
-accessibility.
+Navigating a university campus can be challenging for individuals with mobility or accessibility needs—especially when faced with unexpected obstacles such as elevator outages, construction zones, or event-related disruptions. To address this issue, the **Campus Accessibility Navigation System with Facilities and Event Integration (CANS)** provides an intelligent, real-time navigation solution designed specifically to support accessibility.
 
-This system will integrate live data from the university's facilities
-management system and event calendar to offer users updated and
-accessible route guidance. Through a user-friendly web application,
-students, staff, and visitors will be able to plan their routes with
-confidence, avoiding inaccessible paths and disruptions.
+This system integrates live data from the university’s Facilities Management System and Event Calendar to offer updated, accessible route guidance. Through a user-friendly web application, students, staff, and visitors can confidently plan routes while avoiding inaccessible paths and disruptions.
 
-By focusing on accessibility, real-time updates, and integration with
-existing campus infrastructure, this project promotes greater
-independence, inclusivity, and efficiency across the university
-environment.
+By prioritizing accessibility, real-time updates, and integration with existing campus infrastructure, this project promotes independence, inclusivity, and operational efficiency across the university environment. The system also supports non-functional goals such as performance, reliability, and data security, aligning with institutional IT standards and user privacy regulations.
+
+---
 
 ### **1.1 Purpose**
 
-The purpose of this Software Requirements Specification (SRS) is to
-define the functional and non-functional requirements for the **Campus
-Accessibility Navigation System with Facilities and Event Integration
-(CANS)**. This system is being developed to improve mobility and
-accessibility for students, staff, and visitors across the university
-campus, especially for individuals with disabilities or mobility
-challenges.
+The purpose of this Software Requirements Specification (SRS) is to define the **functional** and **non-functional** requirements for the Campus Accessibility Navigation System with Facilities and Event Integration (**CANS**). This document is intended for developers, university IT administrators, QA personnel, and stakeholders to ensure a shared understanding of system expectations.
 
-CANS aims to serve as a centralised, intelligent, and real-time
-navigation platform that integrates with existing university
-systems---including the Facilities Management System and Event
-Calendar---to provide accurate and timely information about accessible
-routes, infrastructure status, and campus events.
+CANS aims to provide a centralized, intelligent, real-time navigation platform that integrates with existing university systems—including the Facilities Management System and Event Calendar. The system is designed to offer timely and accurate route planning, infrastructure status, and accessibility-aware event listings.
 
 ### **Primary Goals of the System:**
 
 1.  **For Students and Campus Visitors:**
 
 - View real-time, accessible navigation routes across campus.
-
-- Receive automated alerts for elevator outages, construction zones, and
-  route changes.
-
-- Report accessibility issues with photo uploads and location tagging.
-
-- Discover events with accessibility accommodations using filter
-  options.
+- Receive alerts for elevator outages, construction zones, and path changes.
+- Report accessibility issues with photo uploads and geolocation tagging.
+- Discover events with accessibility accommodations using filtering options.
 
 2.  **For Staff Members:**
 
-- Update real-time facility statuses (e.g., elevators, construction).
-
-- Add and manage event details, specifying accessibility information.
-
-- Address and close accessibility reports submitted by users.
+- Update real-time facility statuses (e.g., elevator outages, pathway reopenings).
+- Create and manage event details, including accessibility metadata.
+- Address and resolve accessibility reports submitted by users.
 
 3.  **For Administrators:**
 
-- Manage user roles, permissions, and system access.
-
+- Manage user roles, permissions, and system-wide access.
 - Review and approve submitted event and facility data.
+- Sync data with external university services.
+- Generate usage analytics and accessibility reports for continuous improvement.
 
-- Synchronise system data with external university services.
+In addition to these goals, the system emphasizes non-functional qualities such as secure data handling, accessibility compliance (WCAG 2.1), and consistent availability.
 
-- Generate accessibility reports and usage analytics for continuous
-  improvement.
-
-This document is intended for the project development team, university
-IT administrators, QA personnel, and relevant stakeholders. It provides
-a definitive guide for the design, development, validation, and
-deployment of the CANS platform, ensuring that the system supports the
-university\'s mission of promoting a more inclusive, accessible, and
-responsive campus environment.
+---
 
 ### **1.2 Scope**
 
-The **Campus Accessibility Navigation System (CANS)** is a web-based
-solution designed to improve mobility and navigation for individuals
-across the university campus, with a strong focus on supporting those
-with disabilities. By combining real-time facility data, event
-schedules, and user-generated reports, the system enables students,
-staff, and administrators to engage with a more inclusive, responsive
-campus environment.
+The Campus Accessibility Navigation System (**CANS**) is a web-based platform designed to enhance campus mobility and accessibility, particularly for individuals with disabilities or mobility challenges. It leverages real-time facility status updates, event metadata, and user-generated reports to improve navigation outcomes.
 
-CANS will be developed as a responsive web application, accessible via
-both mobile and desktop browsers, and will integrate with existing
-university infrastructure where possible. It will address a critical gap
-in accessible campus navigation by delivering timely route information,
-supporting infrastructure management, and promoting accessibility-first
-event planning.
+CANS will be accessible on both desktop and mobile browsers, integrating with university databases to ensure up-to-date and accurate information. Features include accessible route generation, disruption alerts, event filtering by accessibility, issue reporting, and administrative tools.
 
-### **System Capabilities and Features**
+---
 
-**1. Accessible Route Planning**
+## 1.3 Product Overview
 
-- Allows users to generate optimal navigation routes between locations
-  on campus.
+### 1.3.1 Product Perspective
 
-- Routing will factor in accessibility preferences such as:
-
-1.  Avoidance of stairs
-
-2.  Elevator availability
-
-3.  Ramp access and wide paths
-
-- Real-time facility data and static map data will be combined to
-  produce the most appropriate paths based on user needs.
-
-**2. Real-Time Facility Alerts**
-
-Users will be notified of live disruptions that affect mobility,
-including:
-
-- Elevator outages
-
-- Construction or maintenance zones
-
-- Temporarily blocked access routes
-
-Alerts will automatically influence route suggestions to help users
-avoid inaccessible areas.
-
-**3. Event Integration with Accessibility Information**
-
-CANS will integrate with the university's event calendar and display
-upcoming events.
-
-Each event will include accessibility-related metadata, such as:
-
-- Wheelchair-accessible entrances
-
-- Reserved seating areas
-
-- Availability of sign language interpreters
-
-- Braille signage
-
-Users can filter events based on available accommodations.
-
-**4. Accessibility Issue Reporting**
-
-Students and visitors will be able to report on-campus accessibility
-issues.
-
-Reports may include:
-
-- Photo evidence
-
-- Geolocation data
-
-- Time stamps and written descriptions
-
-Submissions will be routed to staff for review and resolution tracking.
-
-**5. Facility and Event Data Management**
-
-Designated staff users will have access to an administrative backend
-for:
-
-- Updating facility statuses (e.g., elevator repairs, reopened pathways)
-
-- Creating and editing event listings with accessibility attributes
-
-Changes will be reflected in real-time for all users.
-
-**6. Role-Based User Access Control**
-
-The system will enforce role-based permissions to secure access to
-relevant features:
-
-- **Students/Visitors**: View routes, receive alerts, report issues,
-  browse events
-
-- **Staff**: Manage infrastructure and event data
-
-- **Administrators**: Manage users, approve updates, generate reports,
-  and sync external data
-
-Role-specific dashboards will ensure each user has a tailored
-experience.
-
-**7. System Monitoring and Reporting**
-
-Administrators will be able to generate analytical and performance
-reports, including:
-
-- Frequency and resolution status of reported accessibility issues
-
-- Most commonly used accessible routes
-
-- System usage statistics categorised by user role
-
-These insights will support strategic planning and continuous service
-improvement.
-
-**8. Multi-Platform Accessibility**
-
-CANS will be accessible on:
-
-- Mobile devices (smartphones, tablets)
-
-- Desktop computers
-
-The system will comply with **WCAG 2.1** accessibility standards,
-supporting:
-
-- Screen readers
-
-- High-contrast UI options
-
-- Keyboard-only navigation
-
-- Multilingual interface options
-
-### **1.3 Product Overview**
-
-#### **1.3.1 Product Perspective**
+CANS acts as a centralized, web-based platform connected to external systems via secure APIs. It bridges user input, facility data, and event scheduling through a unified, accessible interface.
 
 ![](media/image3.png){width="6.283464566929134in"
 height="4.194444444444445in"}
 
 _Figure 2: System Context Diagram_
 
-### **4.x Functional Requirement Goals**
+### 1.3.2 Product Functions
 
-| **Requirement ID** | **Goal**                                                                                         | **Author** |
-| ------------------ | ------------------------------------------------------------------------------------------------ | ---------- |
-| RQ-01              | Generate real-time accessible campus routes using live facility and map data.                    |            |
-| RQ-02              | Send dynamic alerts for elevator outages, construction, and path disruptions.                    |            |
-| RQ-03              | Provide 24/7 multi-platform access (web/mobile) to route and facility information.               |            |
-| RQ-04              | Display and filter upcoming campus events based on accessibility accommodations.                 |            |
-| RQ-05              | Allow students to report accessibility issues with photo, geolocation, and description.          |            |
-| RQ-06              | Track the status and resolution of reported issues for transparency.                             |            |
-| RQ-07              | Support role-based access control: students, staff, and administrators with defined permissions. |            |
-| RQ-08              | Allow staff to update facility statuses and manage event metadata from a secure backend.         |            |
-| RQ-09              | Store accessibility metadata for campus events (e.g., ramps, signage, interpreters).             |            |
-| RQ-10              | Generate administrative reports on usage, issue trends, and accessibility KPIs.                  |            |
-| RQ-11              | Ensure secure integration with external systems (e.g., Facilities DB, Event Calendar) via API.   |            |
-| RQ-12              | Allow administrators and staff to manually sync data and monitor integration status.             |            |
-| RQ-13              | Protect all personal data, reports, and preferences with secure data handling protocols.         |            |
-| RQ-14              | Ensure WCAG 2.1 compliance for all UI components, including screen reader and contrast support.  |            |
-| RQ-15              | Provide multilingual support and simplified UI for cognitive and visual impairments.             |            |
-
-#### **1.3.2 Product Functions**
-
-The Campus Accessibility Navigation System (CANS) offers a suite of
-functionalities to support inclusive campus mobility and accessibility
-for students, staff, and administrators. These functions are grouped by
-role-based access and are designed to operate seamlessly through a
-secure web and mobile platform.
-
-### **Functional Requirements**
-
-| **Function ID** | **Function Name**                 | **Description**                                                        | **Actor**                     |
-| --------------- | --------------------------------- | ---------------------------------------------------------------------- | ----------------------------- |
-| FN-01           | Log in to the System              | Authenticate users and provide access based on their assigned role.    | Student, Staff, Administrator |
-| FN-02           | Plan an Accessible Route          | Generate optimal accessible routes across campus based on preferences. | Student                       |
-| FN-03           | Event Status Alerting             | Notify users in real-time about construction, elevator outages, etc.   | Student                       |
-| FN-04           | Accessibility Issue Reporting     | Allow students to report issues with photos, location, and text.       | Student                       |
-| FN-05           | Report Status Tracking            | Enable tracking of resolution status for submitted reports.            | Student, Administrator        |
-| FN-06           | Track Report Status               | View the current status of issue reports and related actions.          | Student, Staff                |
-| FN-07           | Facility and Event Management     | Update facility statuses and event details.                            | Staff                         |
-| FN-08           | Manage Event Information          | Add or modify accessibility-related metadata for events.               | Staff                         |
-| FN-09           | Resolve Reported Issues           | Review, address, and mark issues as resolved.                          | Staff                         |
-| FN-10           | Report Resolution Workflow        | Coordinate, validate, and finalize resolution processes.               | Administrator, Staff          |
-| FN-11           | Data Synchronization              | Sync data from external systems (e.g., facilities or event DBs).       | Administrator                 |
-| FN-12           | User Role & Permission Management | Assign roles and manage access levels.                                 | Administrator                 |
-| FN-13           | System Monitoring & Reporting     | Generate and view system usage and analytics.                          | Administrator                 |
-| FN-14           | Multilingual and Accessible UI    | Provide WCAG-compliant and multilingual accessibility features.        | Administrator                 |
+Key functions of the system (categorized by user role) include:
+- User authentication and dashboard access (all roles)
+- Accessible route planning (Students)
+- Event filtering by accessibility options (Students)
+- Facility/event data management (Staff)
+- Report resolution workflows (Staff, Admin)
+- Role management, analytics, and system monitoring (Admins)
 
 ![](media/image1.png){width="6.283464566929134in"
 height="7.083333333333333in"}
 
-#### **1.3.3 User Characteristics**
-
-The Campus Accessibility Navigation System (CANS) will be used by a
-diverse group of users with varying levels of technical expertise and
-accessibility needs. The design must accommodate their requirements
-through intuitive interfaces, role-based access control, and
-accessibility-compliant features.
-
-### **User Roles and Expected Knowledge**
-
-| **Role**      | **Description**                                                                 | **Expected Knowledge**                                                             |
-| ------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| Student       | Primary users who use the system to plan accessible routes, view event          | Basic familiarity with mobile and web apps. No technical background required.      |
-|               | accessibility info, and report issues.                                          |                                                                                    |
-| Staff         | Facility managers or event organisers who update facility statuses, input event | Moderate understanding of digital forms, data entry systems, and admin dashboards. |
-|               | accessibility metadata, and resolve reports.                                    |                                                                                    |
-| Administrator | Responsible for managing user roles, monitoring activity, syncing data, and     | High IT proficiency. Comfortable with configuration tools, RBAC, and reporting.    |
-|               | generating reports.                                                             |                                                                                    |
+(See Section 3.1.1–3.1.13 for full use cases)
 
-#### **1.3.4 Limitations**
+### 1.3.3 User Characteristics
 
-Despite its robust design, the Campus Accessibility Navigation System
-(CANS) has some technical and operational limitations that must be
-acknowledged:
+| User Role   | Description                                                                 | Expected Technical Skill Level         |
+|-------------|-----------------------------------------------------------------------------|----------------------------------------|
+| Student     | Uses system to plan routes, receive alerts, report issues, and find events. | Basic computer/mobile familiarity      |
+| Staff       | Manages facility/event updates and issue resolution.                        | Moderate admin interface experience    |
+| Admin       | Oversees system operations, roles, syncing, and reporting.                  | Advanced system and access management  |
 
-- \*\*Dependence on External Systems:\*\*
-  The accuracy of real-time data (e.g., elevator outages, construction
-  notices, event updates) depends on timely and accurate inputs from the
-  university\'s facilities and event management systems.
+### 1.3.4 Limitations
 
-- \*\*Internet Connectivity Requirement:\*\*
-  Since the platform is web and cloud-based, users must have an active
-  internet connection to access real-time routing, alerts, and event
-  data.
+- **Depends on external systems:** Real-time accuracy relies on Facilities/Event system updates.
+- **Internet required:** CANS is cloud-based; offline use is not supported.
+- **Campus-only scope:** Navigation limited to university premises.
+- **Manual metadata updates:** Staff input determines data freshness.
+- **Limited indoor precision:** Indoor pathfinding depends on future upgrades.
+- **Device compatibility:** May not fully support outdated browsers/devices.
 
-- \*\*Campus-Only Scope:\*\*
-  The navigation and accessibility features are restricted to the
-  university's campus boundaries. Off-campus locations are not
-  supported.
+---
 
-- \*\*Manual Data Entry for Accessibility Tags:\*\*
-  Staff are responsible for entering accessibility metadata for events
-  and facilities. Incomplete or delayed updates may affect route
-  accuracy or event filtering.
+## 1.4 Definitions
 
-- \*\*Limited Indoor Navigation Precision:\*\*
-  Indoor mapping (e.g., within multi-story buildings) may be limited in
-  precision unless further integrated with advanced positioning systems
-  (planned for future versions).
+| Term                  | Definition                                                                 |
+|-----------------------|---------------------------------------------------------------------------|
+| **CANS**              | Campus Accessibility Navigation System                                    |
+| **WCAG 2.1**          | Web Content Accessibility Guidelines for accessible UI design             |
+| **API**               | Application Programming Interface for system integration                  |
+| **Geolocation Data**  | GPS/map-based coordinates for route and issue tracking                    |
+| **RBAC**              | Role-Based Access Control – limits access by user type                    |
 
-- \*\*Device Compatibility:\*\*
-  While designed for modern browsers and devices, older hardware or
-  unsupported operating systems may not provide optimal performance.
+---
 
-###
+## 1.5 Apportioning of Requirements
 
-### **1.4 Definitions** This section defines key terms, acronyms, and concepts used in this document to ensure clarity and consistency for all stakeholders.
+**Phase 1: MVP (Core)**  
+- Real-time routing (RQ-01)
+- Alerts (RQ-02)
+- Web UI (RQ-03)
+- Role-based access control (RQ-07)
+- Basic login and reports (FN-01, FN-04)
 
-### **Glossary of Terms**
+**Phase 2: Enhanced**  
+- Event filtering (RQ-04)
+- Photo-based reports (RQ-05)
+- Mobile UI (RQ-15)
+- Staff dashboard (FN-08)
 
-| **Term**                         | **Definition**                                                                  |
-| -------------------------------- | ------------------------------------------------------------------------------- |
-| AES Encryption                   | Advanced Encryption Standard: A secure method for encrypting sensitive data.    |
-| API                              | Application Programming Interface: Enables integration with external systems.   |
-| Accessibility Metadata           | Data describing features like wheelchair access or sign interpreters.           |
-| CANS                             | Campus Accessibility Navigation System: The platform for accessible navigation. |
-| CCPA                             | California Consumer Privacy Act: Protects consumer data rights in the US.       |
-| ERD                              | Entity-Relationship Diagram: Visual representation of database structure.       |
-| Event Participation              | Record of a user’s registration or attendance at a campus event.                |
-| Foreign Key                      | Field linking two tables to enforce referential integrity.                      |
-| GDPR                             | General Data Protection Regulation: EU data privacy and consent regulation.     |
-| Geolocation Data                 | GPS/map coordinates for user location and route planning.                       |
-| Load Balancing                   | Distributes network traffic across servers to improve performance.              |
-| Multi-Platform Accessibility     | Compatibility across devices and adherence to accessibility standards.          |
-| Normalization                    | DB design to reduce redundancy and ensure integrity.                            |
-| Real-Time Facility Data          | Live status updates for campus infrastructure (e.g., elevators).                |
-| Referential Integrity            | Ensures valid relationships between tables via foreign keys.                    |
-| Role-Based Access Control (RBAC) | Restricts access based on user roles (Student, Staff, Admin).                   |
-| SSL/TLS                          | Secure protocols for encrypted network communication.                           |
-| Static Map Data                  | Pre-loaded maps with fixed accessibility features like ramps and stairs.        |
-| System Context Diagram           | Shows system interaction with external entities like users or databases.        |
-| User-Generated Reports           | Reports from users about issues with photos, GPS, and descriptions.             |
-| WCAG 2.1                         | Web Content Accessibility Guidelines 2.1 for digital accessibility compliance.  |
+**Phase 3: Advanced & Admin Tools**  
+- Analytics & APIs (RQ-10, RQ-11, RQ-12)
+- Full WCAG support (RQ-14)
+- Multilingual expansion (RQ-15)
 
-> Notes:
+**Future Work**  
+- Indoor navigation
+- IoT sensor integration
+- AI-driven routing
 
-- Terms are ordered alphabetically for quick reference.
+---
 
-- Technical jargon is simplified where possible to accommodate
-  non-technical readers.
+## 1.6 User Interface
 
-- Regulatory terms (e.g., GDPR, CCPA) are included to clarify compliance
-  requirements.
+### 1.6.1 Overview
 
-###
+CANS features role-specific dashboards and an interactive map. Users receive disruption alerts, submit reports, and manage events through a modern, WCAG-compliant interface.
 
-###
+### 1.6.2 UI Guidelines
 
-### **1.5 Apportioning of Requirements** This section outlines how the system's requirements (functional and non-functional) will be prioritized, grouped, and phased during development. Requirements are apportioned based on criticality, dependencies, resource availability, and stakeholder priorities.
+- **Accessibility:** WCAG 2.1 AA compliant, screen reader support, high contrast.
+- **Consistency:** Fixed top navigation, branded theme, common icon sets.
+- **Feedback:** Clear messages for errors, status changes, and actions.
+- **Mobile-Ready:** Fully responsive layout and touch-friendly design.
 
-## **Phase 1: Core Functionality (MVP -- Minimum Viable Product)**
+---
 
-> Objective: Deliver foundational features to address urgent
-> accessibility needs.
->
-> Requirements Included:
+## 1.7 External Interfaces
 
-- RQ-01: Generate real-time accessible routes using static map data.
-
-- RQ-02: Basic real-time alerts for elevator outages and construction.
-
-- RQ-03: Web-based platform accessible on desktop browsers.
-
-- RQ-07: Role-based access control for Students and Staff.
-
-- FN-01: User authentication and login system.
-
-- FN-02: Route planning with basic accessibility filters (e.g., avoid
-  stairs).
-
-- FN-04: Basic issue reporting without photo uploads (text-only).
-
-- RQ-13: Data encryption for user credentials.
-
-## **Phase 2: Enhanced Features & Event Integration**
-
-> Objective: Expand functionality with event integration, advanced
-> reporting, and mobile support.
->
-> Requirements Included:
-
-- RQ-04: Event calendar integration with accessibility metadata.
-
-- RQ-05: Full issue reporting with photo uploads and geolocation.
-
-- RQ-06: Report tracking dashboard for users and staff.
-
-- RQ-09: Event accessibility metadata (e.g., interpreters, seating).
-
-- FN-03: Real-time alert delivery via push notifications.
-
-- FN-08: Staff backend for event accessibility tagging.
-
-- FN-14: Mobile-responsive UI.
-
-- RQ-15: Basic multilingual support (English + one additional language).
-
-## **Phase 3: Advanced Features & Scalability**
-
-> Objective: Optimize performance, add administrative tools, and ensure
-> compliance.
->
-> Requirements Included:
-
-- RQ-10: Advanced analytics and reporting for administrators.
-
-- RQ-11: API integration with external systems (Facilities DB, Event
-  Calendar).
-
-- RQ-12: Manual data sync and integration monitoring.
-
-- RQ-14: Full WCAG 2.1 compliance (e.g., screen reader optimization).
-
-- FN-13: System monitoring dashboard for administrators.
-
-- FN-12: Bulk user import/export and role management.
-
-- RQ-15: Expanded multilingual support (3+ languages).
-
-## **Future Considerations (Post-Launch)**
-
-> Objective: Address lower-priority or resource-intensive features.
->
-> Requirements Included:
-
-- Indoor navigation precision (e.g., building-floor mapping).
-
-- AI-driven predictive routing (e.g., anticipating disruptions).
-
-- Integration with IoT sensors for real-time facility monitoring.
-
-## **Prioritization Criteria**
-
-- Criticality: Features directly impacting accessibility (e.g., route
-  planning) are prioritized.
-
-- Dependencies: Role-based access (RQ-07) must precede staff/admin
-  features.
-
-- User Impact: High-demand features (e.g., mobile compatibility) are
-  accelerated.
-
-- Regulatory Compliance: WCAG 2.1 (RQ-14) and GDPR (RQ-13) are mandatory
-  for launch.
-
-###
-
-### **1.6 User Interface**
-
-#### **1.6.1 Overview**
-
-The _Campus Accessibility Navigation System (CANS)_ user interface (UI)
-is designed to provide an inclusive, intuitive, and responsive
-experience across all supported platforms, namely desktop, mobile, and
-tablet. The UI adheres to WCAG 2.1 accessibility standards, ensuring
-compatibility with assistive technologies, such as screen readers and
-keyboard navigation. Key components include:
-
-- **Role-Specific Dashboards:**
-
-  - Students/Visitors: Route planning, event filtering, and issue
-    reporting.
-
-  - Staff: Facility/event management and report resolution.
-
-  - Administrators: User management, analytics, and system monitoring.
-
-- **Interactive Campus Map:**
-
-  - Displays real-time accessible routes, facility statuses (e.g.,
-    elevator outages), and event locations.
-
-- **Alert System:**
-
-  - Push notifications and in-app banners for disruptions (e.g.,
-    construction zones).
-
-- **Reporting Module:**
-
-  - Photo upload, geolocation tagging, and structured forms for
-    accessibility issues.
-
-#### **1.6.2 UI Guidelines**
-
-- **Accessibility Standards:**
-
-  - WCAG 2.1 AA compliance (e.g., keyboard navigation, alt text for
-    images).
-
-  - Screen reader support (ARIA labels).
-
-  - Adjustable font sizes and high-contrast themes.
-
-- **Consistency:**
-
-  - Uniform color scheme (university branding) and iconography.
-
-  - Predictable layout across all pages (e.g., navigation bar always at
-    top).
-
-- **Feedback Mechanisms:**
-
-  - Visual cues (e.g., loading spinners) for system actions.
-
-  - Error messages with actionable solutions (e.g., \"Please upload a
-    photo to submit this report\").
-
-- **Mobile Optimization:**
-
-  - Touch-friendly buttons and collapsible menus.
-
-  - Priority to core functions (route planning, alerts) on smaller
-    screens.
-
-### **1.7 External Interfaces**
-
-#### **1.7.1 University Facilities Management System**
-
-#### **Purpose:** Fetch real-time data on elevator outages, construction zones, and pathway closures.
-
-#### **Interface Type:** REST API (JSON).
-
-#### **Data Flow:**
-
-#### CANS polls the Facilities API every 5 minutes for updates.
-
-#### Facility status changes trigger alerts in CANS (e.g., \"Elevator B-12 out of service\").
-
-#### **Security:** OAuth 2.0 authentication; encrypted data transmission (SSL/TLS).
-
-#### **1.7.2 Campus Event Calendar**
-
-#### **Purpose:** Sync event details (date, location, accessibility metadata).
-
-#### **Interface Type:** iCal feed + custom API for accessibility tags
-
-#### **Data Flow:**
-
-#### Automated nightly syn
-
-#### c for event schedules.
-
-#### Manual override for staff to add accessibility metadata via CANS backend.
-
-#### **Security:** API key authentication; read-only access for CANS.
+- **Facilities API:** Provides real-time status updates on elevators, construction, etc. (JSON + OAuth 2.0).
+- **Event Calendar API:** Imports events and accessibility metadata nightly; supports manual overrides.
 
 ## **2. References**
 
@@ -1458,7 +1039,8 @@ in this document.
 | **Session ID** | **Date and Time**  | **Technique** | **Section Reviewed** | **Participant & Role**                                              | **No. of Defect** |
 | -------------- | ------------------ | ------------- | -------------------- | ------------------------------------------------------------------- | ----------------- |
 | VS-01          | 22/6/2025; 7am–1pm | Inspection    | 3.1, 3.2, 3.3, 3.5   | Naqib                                                               | 4                 |
-| VS-00          | 3/6/2025; 2pm–6pm  | Inspection    | 3.4, 3.5             | Chen (Inspector), Dana (Author), Ben (Presenter), Alice (Inspector) | 5                 |
+| VS-02          | 22/6/2025; 5pm–7pm | Inspection    | 1.0–1.7 (Introduction)          | 
+Yeng Xun (Reviewer)                                                 | 5                 |
 | VS-02          | 22/6/2025; 2pm–4pm | Inspection    | 3.5–3.8              | Harith                                                              | 9                 |
 | VS-03          | 22/6/2025; 2pm–4pm | Inspection    | 4.0 – Verification   | Dharvin                                                             | 3                 |
 
@@ -1485,7 +1067,10 @@ in this document.
 | REQ-V002          | 4.5         | No verification activity mentioned for database encryption or access control | Dharvin          | Include validation of encrypted data fields and authorized access tests  | VS-03          | 4                  |
 | REQ-V003          | 4.7         | Attributes like Maintainability and Reliability lack measurable validation methods | Dharvin          | Propose testable metrics or thresholds for system attributes  | VS-03          | 2                  |
 
-
+| **Req ID** | **Section** | **Validation and Defect Description**                | **Detected By** | **Comment/Suggested Fix**                               | **Session ID** | **Severity (1–5)** |
+|------------|-------------|------------------------------------------------------|-----------------|---------------------------------------------------------|----------------|--------------------|
+| REQ-005    | 1.1         | Purpose section lacks mention of non-functional goals | Yeng Xun        | Added brief mention of security and performance aspects | VS-02          | 3                  |
+| REQ-006    | 1.3.1       | Missing system context diagram                       | Yeng Xun        | Added placeholder “To be inserted”                     | VS-02          | 2                  |
 
 #### **B. Documentation Defects**
 
@@ -1500,6 +1085,12 @@ in this document.
 | -          | 3.5         | “Filed Name” typo repeated in multiple tables     | Harith          | Replace with “Field Name”      | VS-02          | 2                  |
 | -          | 3.8         | Kano summary hard to read                         |
 
+| **Req ID** | **Section** | **Validation and Defect Description**      | **Detected By** | **Comment/Suggested Fix**                       | **Session ID** | **Severity (1–5)** |
+|------------|-------------|--------------------------------------------|-----------------|-------------------------------------------------|----------------|--------------------|
+| REQ-007    | 1.1         | Inconsistent list format under "Primary Goals" | Yeng Xun        | Reworded lists with uniform bullets and clarity | VS-02          | 2                  |
+| REQ-008    | 1.6         | UI subsections inconsistent in heading format | Yeng Xun        | Reorganized 1.6.1 and 1.6.2 into parallel style  | VS-02          | 1                  |
+| REQ-009    | 3.5.3.2     | Typo in table name “Stuff Table”            | Yeng Xun        | Corrected to “Staff Table”                      | VS-02          | 1                  |
+
 #### **C. Agreement Defects**
 
 | **Req ID** | **Section** | **Validation Description / Stakeholder Concern** | **Mismatch**                | **Detected By** | **Session ID** | **Severity (1–5)** |
@@ -1511,6 +1102,10 @@ in this document.
 | ---------- | ----------- | ------------------------------------------------------------ | ------------------------------------- | --------------- | -------------- | ------------------ |
 | -          | 3.7         | Security & accessibility included but not linked to feedback | No justification from user side       | Harith          | VS-02          | 3                  |
 | -          | 3.8         | No comment on low stakeholder diversity                      | Missing follow-up on limited feedback | Harith          | VS-02          | 3                  |
+
+| **Req ID** | **Section** | **Validation Description / Stakeholder Concern** | **Mismatch**           | **Detected By** | **Session ID** | **Severity (1–5)** |
+|------------|-------------|--------------------------------------------------|-------------------------|-----------------|----------------|--------------------|
+| —          | —           | No stakeholder disagreement found in Introduction | —                       | Yeng Xun        | VS-02          | —                  |
 
 ### **6.3 Conflict Analysis**
 
