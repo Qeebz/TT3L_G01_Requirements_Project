@@ -2271,3 +2271,94 @@ Refer to [[Section
 1.4]{.underline}](#definitions-this-section-defines-key-terms-acronyms-and-concepts-used-in-this-document-to-ensure-clarity-and-consistency-for-all-stakeholders.)
 -- Definitions -- for the full list of acronyms and abbreviations used
 in this document.
+
+
+## **6. Supporting Information**
+
+### **6.1 Validation Sessions**
+
+| **Session ID** | **Date and Time**     | **Technique** | **Section Reviewed** | **Participant & Role**                                               | **No. of Defect** |
+|----------------|-----------------------|---------------|-----------------------|---------------------------------------------------------------------|-------------------|
+| VS-01          | 2/6/2025; 10am–2pm    | Inspection    | 2.1, 3.2, 3.3         | Alice (Inspector), Ben (Inspector), Chen (Moderator)                | 7                 |
+| VS-02          | 3/6/2025; 2pm–6pm     | Inspection    | 3.4, 3.5              | Chen (Inspector), Dana (Author), Ben (Presenter), Alice (Inspector) | 5                 |
+
+
+### **6.2 Defect Summary**
+
+#### **A. Content Defects**
+
+| **Req ID** | **Validation and Defect Description** | **Detected By** | **Comment/Suggested Fix**       | **Session ID** | **Severity (1–5)** |
+|-----------|----------------------------------------|-----------------|----------------------------------|----------------|--------------------|
+| REQ-001   | Missing acceptance criteria            | Alice           | Define measurable outcomes       | VS-01          | 4                  |
+| REQ-004   | “Fast” not defined                     | Ben             | ≤ 2s response time               | VS-01          | 3                  |
+
+#### **B. Documentation Defects**
+
+| **Page No.** | **Validation and Defect Description** | **Detected By** | **Comment/Suggested Fix** | **Session ID** | **Severity (1–5)** |
+|--------------|----------------------------------------|-----------------|----------------------------|----------------|--------------------|
+| Pg 3         | Outdated policy reference              | Chen            | Replace with Policy 102    | VS-02          | 2                  |
+
+#### **C. Agreement Defects**
+
+| **Req ID**  | **Validation Description / Stakeholder Concern** | **Mismatch**               | **Detected By** | **Session ID** | **Severity (1–5)** |
+|-------------|--------------------------------------------------|-----------------------------|-----------------|----------------|--------------------|
+| REQ-012     | 24/7 uptime without failover                     | Operational feasibility gap | Ben             | VS-02          | 5                  |
+
+
+### **6.3 Conflict Analysis**
+
+| **Conflict ID** | **Conflict Description**         | **Conflict Analysis**                                                                                                                                                 | **Stakeholders Involved** | **Session ID** |
+|-----------------|----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|----------------|
+| CF-01           | Performance vs cost tradeoff     | Interest conflict – the QA and Development teams prioritized high performance, while the Product Owner (PO) emphasized minimizing costs. The underlying cause is differing role-based objectives: QA and Dev aim to ensure system reliability and responsiveness, while PO focuses on budget. | PO, QA, Dev Team           | VS-01          |
+
+
+### **6.4 Conflict Resolution**
+
+| **Conflict ID** | **Conflict Resolution Strategy**                                                                                          | **Resolved (Y/N)** | **Outcome (If Resolved)**                                                                                 | **Justification**                                                                                                                |
+|-----------------|----------------------------------------------------------------------------------------------------------------------------|--------------------|-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| CF-01           | Structured negotiation facilitated by the Scrum Master, including trade-off analysis and review of stakeholder priorities. | Y                  | Agreement reached to prioritize performance, with acceptable cost adjustments approved by the PO.         | The resolution process considered stakeholder goals and project constraints, resulting in a sustainable and well-justified agreement. |
+
+---
+
+### **6.5 Change Log**
+
+| **Change ID** | **Req ID(s)** | **Summary of Change**           | **Proposed By** | **Date**       | **Session ID** |
+|---------------|---------------|----------------------------------|-----------------|----------------|----------------|
+| CH-01         | REQ-001       | Added acceptance criteria       | Alice           | dd-mm-yyyy     | VS-01          |
+| CH-02         | REQ-012       | Adjusted uptime expectation     | Ben             | dd-mm-yyyy     | VS-02          |
+
+---
+
+### **6.6 Requirements Traceability Matrix**
+
+| **Req ID** | **Requirement Description**  | **Linked Goal(s)** | **Feature(s)** | **Use Case(s)** | **Traceability Score (1–4)** | **Description**                                                              |
+|-----------|-------------------------------|---------------------|----------------|------------------|-------------------------------|------------------------------------------------------------------------------|
+| REQ-001   | System shall respond <2s       | G1                  | F1             | UC-01            | 4                             | Linked to 3 artifacts with high confidence, correctness, and completeness   |
+| REQ-004   | Real-time notifications        | G2                  | F3             | UC-04            | 3                             | Linked to 3 artifacts, but links may be basic or unverified                 |
+
+---
+
+### **6.7 Roles in Validation & Management**
+
+| **Name** | **Primary Responsibility**                                     | **No. of Sessions Participated** |
+|---------|---------------------------------------------------------------  |----------------------------------|
+| Alice   | Content validation, traceability matrix                         | 2                                |
+| Ben     | GitHub version control, changelog maintenance, conflict logging | 2                                |
+| Chen    | Conflict analysis, stakeholder concern tracking                 | 2                                |
+| Dana    | Documentation review, defect classification                     | 1                                |
+
+---
+
+### **6.8 Version Control & Configuration**
+
+| **Repo Branch**          | **Key Files**                                                                 |
+|--------------------------|-------------------------------------------------------------------------------|
+| `project-part-2`         | - `SRS.md`: Working version of updated SRS                                    |
+|                          | - `TTXL_GX_SRS.doc`: Final version                                            |
+|                          | - `changelog.md`: Record of all requirement-related changes                   |
+|                          |                                                                               |
+| **Commits by StudentX**                 | XX                                                             |
+| **Pull Requests Merged by StudentX**    | XX                                                             |
+| **Change Log Entries Made by StudentX** | XX                                                             |
+
+
