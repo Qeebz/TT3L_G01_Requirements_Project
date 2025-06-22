@@ -1460,6 +1460,7 @@ in this document.
 | VS-01          | 22/6/2025; 7am–1pm | Inspection    | 3.1, 3.2, 3.3, 3.5   | Naqib                                                               | 4                 |
 | VS-00          | 3/6/2025; 2pm–6pm  | Inspection    | 3.4, 3.5             | Chen (Inspector), Dana (Author), Ben (Presenter), Alice (Inspector) | 5                 |
 | VS-02          | 22/6/2025; 2pm–4pm | Inspection    | 3.5–3.8              | Harith                                                              | 9                 |
+| VS-03          | 22/6/2025; 2pm–4pm | Inspection    | 4.0 – Verification   | Dharvin                                                             | 3                 |
 
 ### **6.2 Defect Summary**
 
@@ -1477,6 +1478,14 @@ in this document.
 | ---------- | ----------- | ---------------------------------------- | --------------- | -------------------------------------------------------- | -------------- | ------------------ |
 | -          | 3.5         | ERD not referenced                       | harith          | Add note: “Refer to Section X or Appendix A for the ERD” | VS-02          | 2                  |
 | -          | 3.7         | Maintainability lacks method explanation | Harith          | Add: Inline comments, dev guide, version control, CI/CD  | VS-02          | 2                  |
+
+| **Req ID** | **Section** | **Defect Description**                   | **Detected By** | **Suggested Fix**                                        | **Session ID** | **Severity (1–5)** |
+| ---------- | ----------- | ---------------------------------------- | --------------- | -------------------------------------------------------- | -------------- | ------------------ |
+| REQ-V001          | 4.1         | Verification criteria for functional requirements are vague and generic                       | Dharvin          | Add specific test cases or user scenarios per function | VS-03          | 3                  |
+| REQ-V002          | 4.5         | No verification activity mentioned for database encryption or access control | Dharvin          | Include validation of encrypted data fields and authorized access tests  | VS-03          | 4                  |
+| REQ-V003          | 4.7         | Attributes like Maintainability and Reliability lack measurable validation methods | Dharvin          | Propose testable metrics or thresholds for system attributes  | VS-03          | 2                  |
+
+
 
 #### **B. Documentation Defects**
 
