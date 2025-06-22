@@ -1476,6 +1476,7 @@ in this document.
 |----------------|-----------------------|---------------|-----------------------|---------------------------------------------------------------------|-------------------|
 | VS-01          | 22/6/2025; 7am–1pm    | Inspection    | 3.1, 3.2, 3.3, 3.5    | Naqib                                                               | 4                 |
 | VS-00          | 3/6/2025; 2pm–6pm     | Inspection    | 3.4, 3.5              | Chen (Inspector), Dana (Author), Ben (Presenter), Alice (Inspector) | 5                 |
+| VS-02          | 22/6/2025; 2pm–4pm     | Inspection    | 3.5–3.8               | Harith                                                 | 9                 |
 
 
 ### **6.2 Defect Summary**
@@ -1490,6 +1491,11 @@ in this document.
 | -          | -           | Missing acceptance criteria                               | Example         | Define measurable outcomes       | VS-00          | 4                  |
 | -          | -           | “Fast” not defined                                        | Example         | ≤ 2s response time               | VS-00          | 3                  |
 
+| **Req ID** | **Section** | **Defect Description**                                | **Detected By** | **Suggested Fix**                                                                 | **Session ID** | **Severity (1–5)** |
+|------------|-------------|--------------------------------------------------------|------------------|-----------------------------------------------------------------------------------|----------------|--------------------|
+| -          | 3.5         | ERD not referenced                                     | harith           | Add note: “Refer to Section X or Appendix A for the ERD”                          | VS-02          | 2                  |
+| -          | 3.7         | Maintainability lacks method explanation               | Harith           | Add: Inline comments, dev guide, version control, CI/CD                          | VS-02          | 2                  |
+
 
 #### **B. Documentation Defects**
 
@@ -1498,12 +1504,27 @@ in this document.
 | REQ-003    | 3.1.2       | Typo in title: “Routet”                | Naqib           | Change to “Route”          | VS-01          | 1                  |
 | -          | -           | Outdated policy reference              | Example         | Replace with Policy 102    | VS-00          | 2                  |
 
+| **Req ID** | **Section** | **Validation and Defect Description**             | **Detected By** | **Comment/Suggested Fix**                                         | **Session ID** | **Severity (1–5)** |
+|------------|-------------|---------------------------------------------------|------------------|--------------------------------------------------------------------|----------------|--------------------|
+| -          | 3.5         | “Stuff Table” label used instead of “Staff Table” | Harith           | Correct label to “Staff Table”                                     | VS-02          | 2                  |
+| -          | 3.5         | “Filed Name” typo repeated in multiple tables     | Harith           | Replace with “Field Name”                                          | VS-02          | 2                  |
+| -          | 3.8         | Kano summary hard to read 
+
+
+
 #### **C. Agreement Defects**
 
 | **Req ID** | **Section** | **Validation Description / Stakeholder Concern** | **Mismatch**               | **Detected By** | **Session ID** | **Severity (1–5)** |
 |------------|-------------|--------------------------------------------------|-----------------------------|-----------------|----------------|--------------------|
 | REQ-004    | 3.2.4       | 100+ updates per second seems unrealistic        | Not practical or feasible   | Naqib               | VS-01          | 5                  |
 | -          | -           | 24/7 uptime without failover                     | Operational feasibility gap | Example             | VS-00          | 5                  |
+
+| **Req ID** | **Section** | **Validation Description / Stakeholder Concern**                | **Mismatch**                         | **Detected By** | **Session ID** | **Severity (1–5)** |
+|------------|-------------|------------------------------------------------------------------|--------------------------------------|------------------|----------------|--------------------|
+| -          | 3.7         | Security & accessibility included but not linked to feedback    | No justification from user side      | Harith          | VS-02          | 3                  |
+| -          | 3.8         | No comment on low stakeholder diversity                         | Missing follow-up on limited feedback | Harith           | VS-02          | 3                  |
+
+
 
 
 
