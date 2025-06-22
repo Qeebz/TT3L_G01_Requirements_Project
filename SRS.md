@@ -7,20 +7,19 @@ height="1.8333333333333333in"}
 
 ### **Team Members**
 
-| **NAME**                          | **STUDENT ID**   |
-|-----------------------------------|------------------|
-| Iusupov Alimzhan                  | 1231301318       |
-| Galal Osman Galal Mohamed         | 1221307698       |
-| Balfaqih Ahmed                    | 1221304386       |
-
+| **NAME**                  | **STUDENT ID** |
+| ------------------------- | -------------- |
+| Iusupov Alimzhan          | 1231301318     |
+| Galal Osman Galal Mohamed | 1221307698     |
+| Balfaqih Ahmed            | 1221304386     |
 
 ## **1. Introduction**
 
 Navigating a university campus can be challenging for individuals with
 mobility or accessibility needs, especially when faced with unexpected
 obstacles such as elevator outages, construction zones, or event-related
-route disruptions. To address this issue, the *Campus Accessibility
-Navigation System with Facilities and Event Integration* aims to provide
+route disruptions. To address this issue, the _Campus Accessibility
+Navigation System with Facilities and Event Integration_ aims to provide
 an intelligent, real-time navigation solution designed specifically for
 accessibility.
 
@@ -239,28 +238,27 @@ supporting:
 ![](media/image3.png){width="6.283464566929134in"
 height="4.194444444444445in"}
 
-*Figure 2: System Context Diagram*
+_Figure 2: System Context Diagram_
 
 ### **4.x Functional Requirement Goals**
 
-| **Requirement ID** | **Goal**                                                                 | **Author** |
-|--------------------|---------------------------------------------------------------------------|------------|
-| RQ-01              | Generate real-time accessible campus routes using live facility and map data. |            |
-| RQ-02              | Send dynamic alerts for elevator outages, construction, and path disruptions. |            |
-| RQ-03              | Provide 24/7 multi-platform access (web/mobile) to route and facility information. |            |
-| RQ-04              | Display and filter upcoming campus events based on accessibility accommodations. |            |
-| RQ-05              | Allow students to report accessibility issues with photo, geolocation, and description. |            |
-| RQ-06              | Track the status and resolution of reported issues for transparency.       |            |
+| **Requirement ID** | **Goal**                                                                                         | **Author** |
+| ------------------ | ------------------------------------------------------------------------------------------------ | ---------- |
+| RQ-01              | Generate real-time accessible campus routes using live facility and map data.                    |            |
+| RQ-02              | Send dynamic alerts for elevator outages, construction, and path disruptions.                    |            |
+| RQ-03              | Provide 24/7 multi-platform access (web/mobile) to route and facility information.               |            |
+| RQ-04              | Display and filter upcoming campus events based on accessibility accommodations.                 |            |
+| RQ-05              | Allow students to report accessibility issues with photo, geolocation, and description.          |            |
+| RQ-06              | Track the status and resolution of reported issues for transparency.                             |            |
 | RQ-07              | Support role-based access control: students, staff, and administrators with defined permissions. |            |
-| RQ-08              | Allow staff to update facility statuses and manage event metadata from a secure backend. |            |
-| RQ-09              | Store accessibility metadata for campus events (e.g., ramps, signage, interpreters). |            |
-| RQ-10              | Generate administrative reports on usage, issue trends, and accessibility KPIs. |            |
-| RQ-11              | Ensure secure integration with external systems (e.g., Facilities DB, Event Calendar) via API. |            |
-| RQ-12              | Allow administrators and staff to manually sync data and monitor integration status. |            |
-| RQ-13              | Protect all personal data, reports, and preferences with secure data handling protocols. |            |
-| RQ-14              | Ensure WCAG 2.1 compliance for all UI components, including screen reader and contrast support. |            |
-| RQ-15              | Provide multilingual support and simplified UI for cognitive and visual impairments. |            |
-
+| RQ-08              | Allow staff to update facility statuses and manage event metadata from a secure backend.         |            |
+| RQ-09              | Store accessibility metadata for campus events (e.g., ramps, signage, interpreters).             |            |
+| RQ-10              | Generate administrative reports on usage, issue trends, and accessibility KPIs.                  |            |
+| RQ-11              | Ensure secure integration with external systems (e.g., Facilities DB, Event Calendar) via API.   |            |
+| RQ-12              | Allow administrators and staff to manually sync data and monitor integration status.             |            |
+| RQ-13              | Protect all personal data, reports, and preferences with secure data handling protocols.         |            |
+| RQ-14              | Ensure WCAG 2.1 compliance for all UI components, including screen reader and contrast support.  |            |
+| RQ-15              | Provide multilingual support and simplified UI for cognitive and visual impairments.             |            |
 
 #### **1.3.2 Product Functions**
 
@@ -272,23 +270,22 @@ secure web and mobile platform.
 
 ### **Functional Requirements**
 
-| **Function ID** | **Function Name**          | **Description**                                                       | **Actor**                        |
-|-----------------|----------------------------|------------------------------------------------------------------------|----------------------------------|
-| FN-01           | Log in to the System        | Authenticate users and provide access based on their assigned role.    | Student, Staff, Administrator    |
-| FN-02           | Plan an Accessible Route    | Generate optimal accessible routes across campus based on preferences. | Student                          |
-| FN-03           | Event Status Alerting       | Notify users in real-time about construction, elevator outages, etc.   | Student                          |
-| FN-04           | Accessibility Issue Reporting | Allow students to report issues with photos, location, and text.      | Student                          |
-| FN-05           | Report Status Tracking      | Enable tracking of resolution status for submitted reports.            | Student, Administrator           |
-| FN-06           | Track Report Status         | View the current status of issue reports and related actions.          | Student, Staff                   |
-| FN-07           | Facility and Event Management | Update facility statuses and event details.                           | Staff                            |
-| FN-08           | Manage Event Information    | Add or modify accessibility-related metadata for events.               | Staff                            |
-| FN-09           | Resolve Reported Issues     | Review, address, and mark issues as resolved.                          | Staff                            |
-| FN-10           | Report Resolution Workflow  | Coordinate, validate, and finalize resolution processes.               | Administrator, Staff             |
-| FN-11           | Data Synchronization        | Sync data from external systems (e.g., facilities or event DBs).       | Administrator                    |
-| FN-12           | User Role & Permission Management | Assign roles and manage access levels.                             | Administrator                    |
-| FN-13           | System Monitoring & Reporting | Generate and view system usage and analytics.                        | Administrator                    |
-| FN-14           | Multilingual and Accessible UI | Provide WCAG-compliant and multilingual accessibility features.     | Administrator                    |
-
+| **Function ID** | **Function Name**                 | **Description**                                                        | **Actor**                     |
+| --------------- | --------------------------------- | ---------------------------------------------------------------------- | ----------------------------- |
+| FN-01           | Log in to the System              | Authenticate users and provide access based on their assigned role.    | Student, Staff, Administrator |
+| FN-02           | Plan an Accessible Route          | Generate optimal accessible routes across campus based on preferences. | Student                       |
+| FN-03           | Event Status Alerting             | Notify users in real-time about construction, elevator outages, etc.   | Student                       |
+| FN-04           | Accessibility Issue Reporting     | Allow students to report issues with photos, location, and text.       | Student                       |
+| FN-05           | Report Status Tracking            | Enable tracking of resolution status for submitted reports.            | Student, Administrator        |
+| FN-06           | Track Report Status               | View the current status of issue reports and related actions.          | Student, Staff                |
+| FN-07           | Facility and Event Management     | Update facility statuses and event details.                            | Staff                         |
+| FN-08           | Manage Event Information          | Add or modify accessibility-related metadata for events.               | Staff                         |
+| FN-09           | Resolve Reported Issues           | Review, address, and mark issues as resolved.                          | Staff                         |
+| FN-10           | Report Resolution Workflow        | Coordinate, validate, and finalize resolution processes.               | Administrator, Staff          |
+| FN-11           | Data Synchronization              | Sync data from external systems (e.g., facilities or event DBs).       | Administrator                 |
+| FN-12           | User Role & Permission Management | Assign roles and manage access levels.                                 | Administrator                 |
+| FN-13           | System Monitoring & Reporting     | Generate and view system usage and analytics.                          | Administrator                 |
+| FN-14           | Multilingual and Accessible UI    | Provide WCAG-compliant and multilingual accessibility features.        | Administrator                 |
 
 ![](media/image1.png){width="6.283464566929134in"
 height="7.083333333333333in"}
@@ -303,15 +300,14 @@ accessibility-compliant features.
 
 ### **User Roles and Expected Knowledge**
 
-| **Role**        | **Description**                                                                 | **Expected Knowledge**                                             |
-|-----------------|----------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| Student         | Primary users who use the system to plan accessible routes, view event          | Basic familiarity with mobile and web apps. No technical background required. |
-|                 | accessibility info, and report issues.                                          |                                                                    |
-| Staff           | Facility managers or event organisers who update facility statuses, input event | Moderate understanding of digital forms, data entry systems, and admin dashboards. |
-|                 | accessibility metadata, and resolve reports.                                    |                                                                    |
-| Administrator   | Responsible for managing user roles, monitoring activity, syncing data, and     | High IT proficiency. Comfortable with configuration tools, RBAC, and reporting. |
-|                 | generating reports.                                                              |                                                                    |
-
+| **Role**      | **Description**                                                                 | **Expected Knowledge**                                                             |
+| ------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| Student       | Primary users who use the system to plan accessible routes, view event          | Basic familiarity with mobile and web apps. No technical background required.      |
+|               | accessibility info, and report issues.                                          |                                                                                    |
+| Staff         | Facility managers or event organisers who update facility statuses, input event | Moderate understanding of digital forms, data entry systems, and admin dashboards. |
+|               | accessibility metadata, and resolve reports.                                    |                                                                                    |
+| Administrator | Responsible for managing user roles, monitoring activity, syncing data, and     | High IT proficiency. Comfortable with configuration tools, RBAC, and reporting.    |
+|               | generating reports.                                                             |                                                                                    |
 
 #### **1.3.4 Limitations**
 
@@ -319,65 +315,64 @@ Despite its robust design, the Campus Accessibility Navigation System
 (CANS) has some technical and operational limitations that must be
 acknowledged:
 
-- **Dependence on External Systems:\**
+- \*\*Dependence on External Systems:\*\*
   The accuracy of real-time data (e.g., elevator outages, construction
   notices, event updates) depends on timely and accurate inputs from the
   university\'s facilities and event management systems.
 
-- **Internet Connectivity Requirement:\**
+- \*\*Internet Connectivity Requirement:\*\*
   Since the platform is web and cloud-based, users must have an active
   internet connection to access real-time routing, alerts, and event
   data.
 
-- **Campus-Only Scope:\**
+- \*\*Campus-Only Scope:\*\*
   The navigation and accessibility features are restricted to the
   university's campus boundaries. Off-campus locations are not
   supported.
 
-- **Manual Data Entry for Accessibility Tags:\**
+- \*\*Manual Data Entry for Accessibility Tags:\*\*
   Staff are responsible for entering accessibility metadata for events
   and facilities. Incomplete or delayed updates may affect route
   accuracy or event filtering.
 
-- **Limited Indoor Navigation Precision:\**
+- \*\*Limited Indoor Navigation Precision:\*\*
   Indoor mapping (e.g., within multi-story buildings) may be limited in
   precision unless further integrated with advanced positioning systems
   (planned for future versions).
 
-- **Device Compatibility:\**
+- \*\*Device Compatibility:\*\*
   While designed for modern browsers and devices, older hardware or
   unsupported operating systems may not provide optimal performance.
 
-### 
+###
 
 ### **1.4 Definitions** This section defines key terms, acronyms, and concepts used in this document to ensure clarity and consistency for all stakeholders.
 
 ### **Glossary of Terms**
 
-| **Term**                            | **Definition**                                                                 |
-|------------------------------------|---------------------------------------------------------------------------------|
-| AES Encryption                     | Advanced Encryption Standard: A secure method for encrypting sensitive data.   |
-| API                                | Application Programming Interface: Enables integration with external systems.  |
-| Accessibility Metadata             | Data describing features like wheelchair access or sign interpreters.          |
-| CANS                               | Campus Accessibility Navigation System: The platform for accessible navigation.|
-| CCPA                               | California Consumer Privacy Act: Protects consumer data rights in the US.      |
-| ERD                                | Entity-Relationship Diagram: Visual representation of database structure.      |
-| Event Participation                | Record of a user’s registration or attendance at a campus event.               |
-| Foreign Key                        | Field linking two tables to enforce referential integrity.                     |
-| GDPR                               | General Data Protection Regulation: EU data privacy and consent regulation.    |
-| Geolocation Data                   | GPS/map coordinates for user location and route planning.                      |
-| Load Balancing                     | Distributes network traffic across servers to improve performance.             |
-| Multi-Platform Accessibility       | Compatibility across devices and adherence to accessibility standards.         |
-| Normalization                      | DB design to reduce redundancy and ensure integrity.                           |
-| Real-Time Facility Data            | Live status updates for campus infrastructure (e.g., elevators).               |
-| Referential Integrity              | Ensures valid relationships between tables via foreign keys.                   |
-| Role-Based Access Control (RBAC)   | Restricts access based on user roles (Student, Staff, Admin).                  |
-| SSL/TLS                            | Secure protocols for encrypted network communication.                          |
-| Static Map Data                    | Pre-loaded maps with fixed accessibility features like ramps and stairs.       |
-| System Context Diagram             | Shows system interaction with external entities like users or databases.       |
-| User-Generated Reports             | Reports from users about issues with photos, GPS, and descriptions.            |
-| WCAG 2.1                           | Web Content Accessibility Guidelines 2.1 for digital accessibility compliance. |
-
+| **Term**                         | **Definition**                                                                  |
+| -------------------------------- | ------------------------------------------------------------------------------- |
+| AES Encryption                   | Advanced Encryption Standard: A secure method for encrypting sensitive data.    |
+| API                              | Application Programming Interface: Enables integration with external systems.   |
+| Accessibility Metadata           | Data describing features like wheelchair access or sign interpreters.           |
+| CANS                             | Campus Accessibility Navigation System: The platform for accessible navigation. |
+| CCPA                             | California Consumer Privacy Act: Protects consumer data rights in the US.       |
+| ERD                              | Entity-Relationship Diagram: Visual representation of database structure.       |
+| Event Participation              | Record of a user’s registration or attendance at a campus event.                |
+| Foreign Key                      | Field linking two tables to enforce referential integrity.                      |
+| GDPR                             | General Data Protection Regulation: EU data privacy and consent regulation.     |
+| Geolocation Data                 | GPS/map coordinates for user location and route planning.                       |
+| Load Balancing                   | Distributes network traffic across servers to improve performance.              |
+| Multi-Platform Accessibility     | Compatibility across devices and adherence to accessibility standards.          |
+| Normalization                    | DB design to reduce redundancy and ensure integrity.                            |
+| Real-Time Facility Data          | Live status updates for campus infrastructure (e.g., elevators).                |
+| Referential Integrity            | Ensures valid relationships between tables via foreign keys.                    |
+| Role-Based Access Control (RBAC) | Restricts access based on user roles (Student, Staff, Admin).                   |
+| SSL/TLS                          | Secure protocols for encrypted network communication.                           |
+| Static Map Data                  | Pre-loaded maps with fixed accessibility features like ramps and stairs.        |
+| System Context Diagram           | Shows system interaction with external entities like users or databases.        |
+| User-Generated Reports           | Reports from users about issues with photos, GPS, and descriptions.             |
+| WCAG 2.1                         | Web Content Accessibility Guidelines 2.1 for digital accessibility compliance.  |
 
 > Notes:
 
@@ -389,9 +384,9 @@ acknowledged:
 - Regulatory terms (e.g., GDPR, CCPA) are included to clarify compliance
   requirements.
 
-### 
+###
 
-### 
+###
 
 ### **1.5 Apportioning of Requirements** This section outlines how the system's requirements (functional and non-functional) will be prioritized, grouped, and phased during development. Requirements are apportioned based on criticality, dependencies, resource availability, and stakeholder priorities.
 
@@ -490,13 +485,13 @@ acknowledged:
 - Regulatory Compliance: WCAG 2.1 (RQ-14) and GDPR (RQ-13) are mandatory
   for launch.
 
-### 
+###
 
 ### **1.6 User Interface**
 
 #### **1.6.1 Overview**
 
-The *Campus Accessibility Navigation System (CANS)* user interface (UI)
+The _Campus Accessibility Navigation System (CANS)_ user interface (UI)
 is designed to provide an inclusive, intuitive, and responsive
 experience across all supported platforms, namely desktop, mobile, and
 tablet. The UI adheres to WCAG 2.1 accessibility standards, ensuring
@@ -655,134 +650,133 @@ URL: [[https://nodejs.org/]{.underline}](https://nodejs.org/)
 
 ### **3.1.1 Log in to the System**
 
-| **Use Case ID/Name** | Log in to the System |
-|----------------------|----------------------|
-| **Precondition**     | The user is registered in the system and has valid credentials. |
-| **Postcondition**    | The user is authenticated and redirected to their role-specific dashboard. |
+| **Use Case ID/Name** | Log in to the System                                                                                                                                                        |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Precondition**     | The user is registered in the system and has valid credentials.                                                                                                             |
+| **Postcondition**    | The user is authenticated and redirected to their role-specific dashboard.                                                                                                  |
 | **Main Flow**        | The user opens the login page.<br> Enter username and password.<br> The system verifies credentials.<br> System redirects to user-specific interface (Student/Staff/Admin). |
-| **Alternate Flow**   | If users forget their password, they click "Forgot Password" and follow the recovery process. |
-| **Exception Flow**   | If the staff lacks permission or the record is locked, the system blocks the update and shows an appropriate message. |
+| **Alternate Flow**   | If users forget their password, they click "Forgot Password" and follow the recovery process.                                                                               |
+| **Exception Flow**   | If the staff lacks permission or the record is locked, the system blocks the update and shows an appropriate message.                                                       |
 
 ### **3.1.2 Plan Accessible Route**
 
-| **Use Case ID/Name** | Plan Accessible Route |
-|----------------------|----------------------|
-| **Precondition**     | The user is logged into the system. |
-| **Postcondition**    | A recommended accessible route is displayed on the map. |
+| **Use Case ID/Name** | Plan Accessible Route                                                                                                                                                                                                                                       |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Precondition**     | The user is logged into the system.                                                                                                                                                                                                                         |
+| **Postcondition**    | A recommended accessible route is displayed on the map.                                                                                                                                                                                                     |
 | **Main Flow**        | Student inputs current location and destination.<br> The system fetches real-time facility data (e.g., elevator status).<br> The system considers user preferences (e.g., avoid stairs).<br> The system displays the optimised accessible route on the map. |
-| **Alternate Flow**   | If real-time data is unavailable, the system uses static map data to generate a basic route. |
-| **Exception Flow**   | If route generation fails (e.g., no accessible path found), the system notifies the user with alternative suggestions (e.g., nearest help desk). |
+| **Alternate Flow**   | If real-time data is unavailable, the system uses static map data to generate a basic route.                                                                                                                                                                |
+| **Exception Flow**   | If route generation fails (e.g., no accessible path found), the system notifies the user with alternative suggestions (e.g., nearest help desk).                                                                                                            |
 
 ### **3.1.3 Accessibility Issue Reporting**
 
-| **Use Case ID/Name** | Accessibility Issue Reporting |
-|----------------------|----------------------|
-| **Precondition**     | Student is logged in and at a valid reporting location. |
-| **Postcondition**    | The issue is submitted and appears in the staff dashboard for review. |
+| **Use Case ID/Name** | Accessibility Issue Reporting                                                                                                                                                                              |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Precondition**     | Student is logged in and at a valid reporting location.                                                                                                                                                    |
+| **Postcondition**    | The issue is submitted and appears in the staff dashboard for review.                                                                                                                                      |
 | **Main Flow**        | Student clicks "Report Issue."<br> Uploads a photo, selects location (via GPS or map), and enters a description.<br> Submits the report.<br> The system logs the issue and notifies the responsible staff. |
-| **Alternate Flow**   | If GPS is unavailable, the student selects a location manually. |
-| **Exception Flow**   | If required fields are empty, the system prompts the user to complete them before submission. |
+| **Alternate Flow**   | If GPS is unavailable, the student selects a location manually.                                                                                                                                            |
+| **Exception Flow**   | If required fields are empty, the system prompts the user to complete them before submission.                                                                                                              |
 
 ### **3.1.4 Facility and Event Management**
 
-| **Use Case ID/Name** | Facility and Event Management |
-|----------------------|----------------------|
-| **Precondition**     | The staff member is logged in with valid permissions. |
-| **Postcondition**    | Facility or event data is updated in the system. |
+| **Use Case ID/Name** | Facility and Event Management                                                                                                                                                                                                                                               |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Precondition**     | The staff member is logged in with valid permissions.                                                                                                                                                                                                                       |
+| **Postcondition**    | Facility or event data is updated in the system.                                                                                                                                                                                                                            |
 | **Main Flow**        | Staff navigates to the management dashboard.<br> Selects a facility (e.g., elevator) or event to update.<br> Enters new status or adds event metadata (e.g., ramps, interpreters).<br> Saves changes.<br> System updates the backend and refreshes user-facing information. |
-| **Alternate Flow**   | Staff uploads event details in bulk using a form or template. |
-| **Exception Flow**   | If submission fails (e.g., due to missing fields or network error), the system displays an error and logs the failure. |
+| **Alternate Flow**   | Staff uploads event details in bulk using a form or template.                                                                                                                                                                                                               |
+| **Exception Flow**   | If submission fails (e.g., due to missing fields or network error), the system displays an error and logs the failure.                                                                                                                                                      |
 
 ### **3.1.5 Report Resolution Workflow**
 
-| **Use Case ID/Name** | Report Resolution Workflow |
-|----------------------|----------------------|
-| **Precondition**     | A reported issue exists in the system; a staff member or admin is logged in. |
-| **Postcondition**    | The issue is marked resolved or otherwise updated. |
+| **Use Case ID/Name** | Report Resolution Workflow                                                                                                                                                                      |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Precondition**     | A reported issue exists in the system; a staff member or admin is logged in.                                                                                                                    |
+| **Postcondition**    | The issue is marked resolved or otherwise updated.                                                                                                                                              |
 | **Main Flow**        | Staff reviews new issue reports.<br> Verifies validity (onsite or via user input).<br> Marks the issue as "Resolved," "In Progress," or "Dismissed."<br> The reporter receives a status update. |
-| **Alternate Flow**   | Admin oversees and audits the resolution history and status changes. |
-| **Exception Flow**   | If the staff lacks permission or the record is locked, the system blocks the update and shows an appropriate message. |
+| **Alternate Flow**   | Admin oversees and audits the resolution history and status changes.                                                                                                                            |
+| **Exception Flow**   | If the staff lacks permission or the record is locked, the system blocks the update and shows an appropriate message.                                                                           |
 
 ### **3.1.6 Event Status Alerting**
 
-| **Use Case ID/Name** | Event Status Alerting |
-|----------------------|----------------------|
-| **Precondition**     | Student is logged in; real-time event and facility data are available. |
-| **Postcondition**    | Alerts are displayed in the interface or sent as notifications. |
+| **Use Case ID/Name** | Event Status Alerting                                                                                                                                                                                                    |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Precondition**     | Student is logged in; real-time event and facility data are available.                                                                                                                                                   |
+| **Postcondition**    | Alerts are displayed in the interface or sent as notifications.                                                                                                                                                          |
 | **Main Flow**        | The system continuously monitors facility and event changes.<br> If a relevant event or obstruction occurs (e.g., elevator outage), it triggers an alert.<br> Student receives notification on dashboard or mobile push. |
-| **Alternate Flow**   | The student views the alert history for previously triggered events. |
-| **Exception Flow**   | If alert delivery fails, the system logs the error and retries or prompts the user to refresh. |
+| **Alternate Flow**   | The student views the alert history for previously triggered events.                                                                                                                                                     |
+| **Exception Flow**   | If alert delivery fails, the system logs the error and retries or prompts the user to refresh.                                                                                                                           |
 
 ### **3.1.7 Track Report Status**
 
-| **Use Case ID/Name** | Track Report Status |
-|----------------------|----------------------|
-| **Precondition**     | The student or staff has previously submitted or received an issue report. |
-| **Postcondition**    | The user can view the current status (e.g., pending, resolved). |
+| **Use Case ID/Name** | Track Report Status                                                                                                                                                    |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Precondition**     | The student or staff has previously submitted or received an issue report.                                                                                             |
+| **Postcondition**    | The user can view the current status (e.g., pending, resolved).                                                                                                        |
 | **Main Flow**        | The user opens the "My Reports" section.<br> The system displays a list of submitted or assigned reports.<br> Each report shows the current status and update history. |
-| **Alternate Flow**   | User filters reports by status or type. |
-| **Exception Flow**   | If the report data fails to load, the system shows an error message and a retry option. |
+| **Alternate Flow**   | User filters reports by status or type.                                                                                                                                |
+| **Exception Flow**   | If the report data fails to load, the system shows an error message and a retry option.                                                                                |
 
 ### **3.1.8 Manage Event Information**
 
-| **Use Case ID/Name** | Manage Event Information |
-|----------------------|----------------------|
-| **Precondition**     | Staff are authenticated and have permission to manage events. |
-| **Postcondition**    | Accessibility information for an event is updated or added. |
+| **Use Case ID/Name** | Manage Event Information                                                                                                                                                     |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Precondition**     | Staff are authenticated and have permission to manage events.                                                                                                                |
+| **Postcondition**    | Accessibility information for an event is updated or added.                                                                                                                  |
 | **Main Flow**        | Staff access the event management interface.<br> Selects or creates an event.<br> Adds accessibility metadata (e.g., wheelchair access, sign language).<br> Submits changes. |
-| **Alternate Flow**   | Staff imports event data from the external calendar via sync. |
-| **Exception Flow**   | If metadata is missing or invalid, the system shows validation errors. |
+| **Alternate Flow**   | Staff imports event data from the external calendar via sync.                                                                                                                |
+| **Exception Flow**   | If metadata is missing or invalid, the system shows validation errors.                                                                                                       |
 
 ### **3.1.9 Resolve Reported Issues**
 
-| **Use Case ID/Name** | Resolve Reported Issues |
-|----------------------|----------------------|
-| **Precondition**     | An issue has been submitted by a user and is pending. |
-| **Postcondition**    | The issue is resolved, and the status is updated. |
+| **Use Case ID/Name** | Resolve Reported Issues                                                                                                                                                                      |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Precondition**     | An issue has been submitted by a user and is pending.                                                                                                                                        |
+| **Postcondition**    | The issue is resolved, and the status is updated.                                                                                                                                            |
 | **Main Flow**        | Staff review incoming reports in the dashboard.<br> Investigate the issue onsite or via details.<br> Takes action to resolve (e.g., repair, remove blockage).<br> Updates the report status. |
-| **Alternate Flow**   | Staff escalates the issue to the administrator or the maintenance unit. |
-| **Exception Flow**   | If staff lack the authority or resources to resolve, the system flags for escalation. |
+| **Alternate Flow**   | Staff escalates the issue to the administrator or the maintenance unit.                                                                                                                      |
+| **Exception Flow**   | If staff lack the authority or resources to resolve, the system flags for escalation.                                                                                                        |
 
 ### **3.1.10 Data Synchronization**
 
-| **Use Case ID/Name** | Data Synchronization |
-|----------------------|----------------------|
-| **Precondition**     | Admin is logged in, and the sync connection with external systems is available. |
-| **Postcondition**    | External facility or event data is updated in the system. |
+| **Use Case ID/Name** | Data Synchronization                                                                                                                                                        |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Precondition**     | Admin is logged in, and the sync connection with external systems is available.                                                                                             |
+| **Postcondition**    | External facility or event data is updated in the system.                                                                                                                   |
 | **Main Flow**        | Admin opens the sync interface.<br> Initiates manual or automatic sync.<br> System fetches and updates data from external APIs (e.g., facilities DB).<br> Status is logged. |
-| **Alternate Flow**   | The system runs a scheduled auto-sync and logs sync success/failure. |
-| **Exception Flow**   | If the API connection fails, the system retries or alerts the admin of the failed sync. |
+| **Alternate Flow**   | The system runs a scheduled auto-sync and logs sync success/failure.                                                                                                        |
+| **Exception Flow**   | If the API connection fails, the system retries or alerts the admin of the failed sync.                                                                                     |
 
 ### **3.1.11 User Role & Permission Management**
 
-| **Use Case ID/Name** | User Role & Permission Management |
-|----------------------|----------------------|
-| **Precondition**     | Admin is authenticated with configuration rights. |
-| **Postcondition**    | User roles and access levels are updated. |
+| **Use Case ID/Name** | User Role & Permission Management                                                                                                                                       |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Precondition**     | Admin is authenticated with configuration rights.                                                                                                                       |
+| **Postcondition**    | User roles and access levels are updated.                                                                                                                               |
 | **Main Flow**        | Admin opens the user management panel.<br> View current users and roles.<br> Adds new users, assigns or changes roles (Student, Staff, Admin).<br> Saves configuration. |
-| **Alternate Flow**   | Admin imports the user list from a CSV or external system. |
-| **Exception Flow**   | If an invalid role is assigned, the system blocks and shows an error. |
+| **Alternate Flow**   | Admin imports the user list from a CSV or external system.                                                                                                              |
+| **Exception Flow**   | If an invalid role is assigned, the system blocks and shows an error.                                                                                                   |
 
 ### **3.1.12 System Monitoring & Reporting**
 
-| **Use Case ID/Name** | System Monitoring & Reporting |
-|----------------------|----------------------|
-| **Precondition**     | Admin is logged in. |
-| **Postcondition**    | Monitoring logs or analytical reports is generated. |
+| **Use Case ID/Name** | System Monitoring & Reporting                                                                                                            |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| **Precondition**     | Admin is logged in.                                                                                                                      |
+| **Postcondition**    | Monitoring logs or analytical reports is generated.                                                                                      |
 | **Main Flow**        | Admin opens the system analytics dashboard.<br> Selects report type (e.g., usage logs, issue stats).<br> Generates and exports a report. |
-| **Alternate Flow**   | Admin schedules recurring reports via system tools. |
-| **Exception Flow**   | If a data source is unavailable, the system shows "report generation failed" and logs an error. |
+| **Alternate Flow**   | Admin schedules recurring reports via system tools.                                                                                      |
+| **Exception Flow**   | If a data source is unavailable, the system shows "report generation failed" and logs an error.                                          |
 
 ### **3.1.13 Multilingual and Accessible UI**
 
-| **Use Case ID/Name** | Multilingual and Accessible UI |
-|----------------------|----------------------|
-| **Precondition**     | The system is running, and the user is interacting with an interface. |
-| **Postcondition**    | Interface adjusts according to the user's language and accessibility settings. |
+| **Use Case ID/Name** | Multilingual and Accessible UI                                                                                                                         |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Precondition**     | The system is running, and the user is interacting with an interface.                                                                                  |
+| **Postcondition**    | Interface adjusts according to the user's language and accessibility settings.                                                                         |
 | **Main Flow**        | The user selects the preferred language or accessibility mode.<br> System updates UI with selected settings (e.g., screen reader mode, high contrast). |
-| **Alternate Flow**   | Admin sets default accessibility settings per role or user group. |
-| **Exception Flow**   | If the selected language is unsupported, the system defaults to English and notifies the user. |
-
+| **Alternate Flow**   | Admin sets default accessibility settings per role or user group.                                                                                      |
+| **Exception Flow**   | If the selected language is unsupported, the system defaults to English and notifies the user.                                                         |
 
 ### **3.2 Performance Requirements** The system must work smoothly and efficiently for all users. Below are the key performance standards it must meet:
 
@@ -902,10 +896,10 @@ ensure efficiency, learnability, and satisfaction for all user roles:
 ### The Entity-Relationship Diagram (ERD) for the Campus Accessibility Navigation System (CANS) provides a structured database model to manage accessibility-related data efficiently. The design includes core entities such as Users, Facilities, Events, Reports, Notifications, and Permissions, linked through defined relationships to ensure data integrity and streamlined operations. The User entity is categorized into Students, Staff, and Admins, enabling role-based access control and functionality. Users interact with Reports to document accessibility issues and with Events to track participation in campus activities. Facilities are managed by staff, with updates triggering Notifications to inform users of relevant changes. The Permissions entity enforces security by regulating access based on user roles. Primary and foreign keys maintain relational integrity, supporting efficient data retrieval and consistency. This ERD framework facilitates real-time navigation, event management, facility oversight, and user engagement, ensuring a cohesive and secure system for accessibility management.
 
 +-----------------------------------------------------------------------+
-| > ![](media/image4.png){width="7.499876421697288in"                   |
-| > height="4.760416666666667in"}                                       |
+| > ![](media/image4.png){width="7.499876421697288in" |
+| > height="4.760416666666667in"} |
 +-----------------------------------------------------------------------+
-| **ERD**                                                               |
+| **ERD** |
 +=======================================================================+
 
 3.5.2 Relationship
@@ -929,98 +923,96 @@ framework.
 
 ## 3.5.3 Data Dictionary
 
-
 ### 3.5.3.1 User Table
 
-| **Field Name** | **Data Type**   | **Description**                 | **Constraints**                          |
-|----------------|------------------|---------------------------------|------------------------------------------|
-| user_id        | INTEGER          | Unique identifier for each user | PRIMARY KEY, NOT NULL, UNIQUE            |
-| email          | VARCHAR(225)     | User email for authentication   | UNIQUE, NOT NULL                         |
-| password       | VARCHAR(225)     | Encrypted password              | NOT NULL                                 |
-| role           | ENUM             | Defines user type               | NOT NULL                                 |
+| **Field Name** | **Data Type** | **Description**                 | **Constraints**               |
+| -------------- | ------------- | ------------------------------- | ----------------------------- |
+| user_id        | INTEGER       | Unique identifier for each user | PRIMARY KEY, NOT NULL, UNIQUE |
+| email          | VARCHAR(225)  | User email for authentication   | UNIQUE, NOT NULL              |
+| password       | VARCHAR(225)  | Encrypted password              | NOT NULL                      |
+| role           | ENUM          | Defines user type               | NOT NULL                      |
 
 ### 3.5.3.2 Student Table
 
-| **Field Name**     | **Data Type** | **Description**              | **Constraints**                                      |
-|--------------------|---------------|------------------------------|------------------------------------------------------|
-| student_id         | INTEGER       | Unique identifier            | PRIMARY KEY, NOT NULL, UNIQUE                        |
-| user_id            | INTEGER       | Foreign key to User table    | FOREIGN KEY REFERENCES User(user_id), UNIQUE         |
-| enrolment_number   | VARCHAR(50)   | Student's registration no.   | UNIQUE, NOT NULL                                     |
+| **Field Name**   | **Data Type** | **Description**            | **Constraints**                              |
+| ---------------- | ------------- | -------------------------- | -------------------------------------------- |
+| student_id       | INTEGER       | Unique identifier          | PRIMARY KEY, NOT NULL, UNIQUE                |
+| user_id          | INTEGER       | Foreign key to User table  | FOREIGN KEY REFERENCES User(user_id), UNIQUE |
+| enrolment_number | VARCHAR(50)   | Student's registration no. | UNIQUE, NOT NULL                             |
 
 ### 3.5.3.3 Staff Table
 
-| **Field Name** | **Data Type**   | **Description**             | **Constraints**                                      |
-|----------------|------------------|-----------------------------|------------------------------------------------------|
-| staff_id       | INTEGER          | Unique staff ID             | PRIMARY KEY, NOT NULL, UNIQUE                        |
-| user_id        | INTEGER          | Foreign key to User table   | FOREIGN KEY REFERENCES User(user_id), UNIQUE         |
-| department     | VARCHAR(100)     | Staff department/unit       | NOT NULL                                             |
+| **Field Name** | **Data Type** | **Description**           | **Constraints**                              |
+| -------------- | ------------- | ------------------------- | -------------------------------------------- |
+| staff_id       | INTEGER       | Unique staff ID           | PRIMARY KEY, NOT NULL, UNIQUE                |
+| user_id        | INTEGER       | Foreign key to User table | FOREIGN KEY REFERENCES User(user_id), UNIQUE |
+| department     | VARCHAR(100)  | Staff department/unit     | NOT NULL                                     |
 
 ### 3.5.3.4 Admin Table
 
-| **Field Name** | **Data Type**   | **Description**             | **Constraints**                                      |
-|----------------|------------------|-----------------------------|------------------------------------------------------|
-| admin_id       | INTEGER          | Unique admin ID             | PRIMARY KEY, NOT NULL, UNIQUE                        |
-| user_id        | INTEGER          | Foreign key to User table   | FOREIGN KEY REFERENCES User(user_id), UNIQUE         |
-| permissions    | TEXT             | Admin-level access rights   | NOT NULL                                             |
+| **Field Name** | **Data Type** | **Description**           | **Constraints**                              |
+| -------------- | ------------- | ------------------------- | -------------------------------------------- |
+| admin_id       | INTEGER       | Unique admin ID           | PRIMARY KEY, NOT NULL, UNIQUE                |
+| user_id        | INTEGER       | Foreign key to User table | FOREIGN KEY REFERENCES User(user_id), UNIQUE |
+| permissions    | TEXT          | Admin-level access rights | NOT NULL                                     |
 
 ### 3.5.3.5 Report Table
 
-| **Field Name** | **Data Type**   | **Description**             | **Constraints**                                      |
-|----------------|------------------|-----------------------------|------------------------------------------------------|
-| report_id      | INTEGER          | Unique report ID            | PRIMARY KEY, NOT NULL, UNIQUE                        |
-| user_id        | INTEGER          | Foreign key to User table   | FOREIGN KEY REFERENCES User(user_id), NOT NULL       |
-| description    | TEXT             | Issue details               | NOT NULL                                             |
-| status         | ENUM             | Report status               | ENUM('Pending','Resolved','In-Progress') NOT NULL    |
-| created_at     | TIMESTAMP        | Report submission time      | DEFAULT CURRENT_TIMESTAMP                            |
+| **Field Name** | **Data Type** | **Description**           | **Constraints**                                   |
+| -------------- | ------------- | ------------------------- | ------------------------------------------------- |
+| report_id      | INTEGER       | Unique report ID          | PRIMARY KEY, NOT NULL, UNIQUE                     |
+| user_id        | INTEGER       | Foreign key to User table | FOREIGN KEY REFERENCES User(user_id), NOT NULL    |
+| description    | TEXT          | Issue details             | NOT NULL                                          |
+| status         | ENUM          | Report status             | ENUM('Pending','Resolved','In-Progress') NOT NULL |
+| created_at     | TIMESTAMP     | Report submission time    | DEFAULT CURRENT_TIMESTAMP                         |
 
 ### 3.5.3.6 Event Table
 
-| **Field Name** | **Data Type**   | **Description**             | **Constraints**                                      |
-|----------------|------------------|-----------------------------|------------------------------------------------------|
-| event_id       | INTEGER          | Unique event ID             | PRIMARY KEY, NOT NULL, UNIQUE                        |
-| organizer_id   | INTEGER          | Foreign key to User table   | FOREIGN KEY REFERENCES User(user_id), NOT NULL       |
-| facility_id    | INTEGER          | Foreign key to Facility     | FOREIGN KEY REFERENCES Facility(facility_id), NOT NULL|
-| event_name     | VARCHAR(255)     | Name of the event           | NOT NULL                                             |
-| event_date     | DATE             | Date of the event           | NOT NULL                                             |
+| **Field Name** | **Data Type** | **Description**           | **Constraints**                                        |
+| -------------- | ------------- | ------------------------- | ------------------------------------------------------ |
+| event_id       | INTEGER       | Unique event ID           | PRIMARY KEY, NOT NULL, UNIQUE                          |
+| organizer_id   | INTEGER       | Foreign key to User table | FOREIGN KEY REFERENCES User(user_id), NOT NULL         |
+| facility_id    | INTEGER       | Foreign key to Facility   | FOREIGN KEY REFERENCES Facility(facility_id), NOT NULL |
+| event_name     | VARCHAR(255)  | Name of the event         | NOT NULL                                               |
+| event_date     | DATE          | Date of the event         | NOT NULL                                               |
 
 ### 3.5.3.7 Event Participation Table
 
-| **Field Name**        | **Data Type** | **Description**         | **Constraints**                                                 |
-|------------------------|---------------|--------------------------|------------------------------------------------------------------|
-| participation_id       | INTEGER       | Unique participation ID  | PRIMARY KEY, NOT NULL, UNIQUE                                   |
-| event_id               | INTEGER       | Foreign key to Event     | FOREIGN KEY REFERENCES Event(event_id), NOT NULL                |
-| user_id                | INTEGER       | Foreign key to User      | FOREIGN KEY REFERENCES User(user_id), NOT NULL                  |
-| registration_status    | ENUM          | Attendee status          | ENUM('Confirmed','Waitlisted') NOT NULL                         |
+| **Field Name**      | **Data Type** | **Description**         | **Constraints**                                  |
+| ------------------- | ------------- | ----------------------- | ------------------------------------------------ |
+| participation_id    | INTEGER       | Unique participation ID | PRIMARY KEY, NOT NULL, UNIQUE                    |
+| event_id            | INTEGER       | Foreign key to Event    | FOREIGN KEY REFERENCES Event(event_id), NOT NULL |
+| user_id             | INTEGER       | Foreign key to User     | FOREIGN KEY REFERENCES User(user_id), NOT NULL   |
+| registration_status | ENUM          | Attendee status         | ENUM('Confirmed','Waitlisted') NOT NULL          |
 
 ### 3.5.3.8 Facility Table
 
-| **Field Name**        | **Data Type**   | **Description**            | **Constraints**                                                  |
-|------------------------|----------------|-----------------------------|------------------------------------------------------------------|
-| facility_id            | INTEGER        | Unique facility ID          | PRIMARY KEY, NOT NULL, UNIQUE                                    |
-| facility_name          | VARCHAR(255)   | Name of the facility        | NOT NULL                                                         |
-| type                   | ENUM           | Facility type               | ENUM('Elevator','Ramp','Room','Pathway') NOT NULL                |
-| status                 | ENUM           | Operational status          | ENUM('Operational','Out-of-Service') NOT NULL                    |
-| last_updated           | TIMESTAMP      | Last update timestamp       | DEFAULT CURRENT_TIMESTAMP                                        |
-| managed_by_staff_id    | INTEGER        | FK to Staff table           | FOREIGN KEY REFERENCES Staff(staff_id), NOT NULL                 |
+| **Field Name**      | **Data Type** | **Description**       | **Constraints**                                   |
+| ------------------- | ------------- | --------------------- | ------------------------------------------------- |
+| facility_id         | INTEGER       | Unique facility ID    | PRIMARY KEY, NOT NULL, UNIQUE                     |
+| facility_name       | VARCHAR(255)  | Name of the facility  | NOT NULL                                          |
+| type                | ENUM          | Facility type         | ENUM('Elevator','Ramp','Room','Pathway') NOT NULL |
+| status              | ENUM          | Operational status    | ENUM('Operational','Out-of-Service') NOT NULL     |
+| last_updated        | TIMESTAMP     | Last update timestamp | DEFAULT CURRENT_TIMESTAMP                         |
+| managed_by_staff_id | INTEGER       | FK to Staff table     | FOREIGN KEY REFERENCES Staff(staff_id), NOT NULL  |
 
 ### 3.5.3.9 Notification Table
 
-| **Field Name**     | **Data Type**   | **Description**           | **Constraints**                                                  |
-|---------------------|------------------|----------------------------|------------------------------------------------------------------|
-| notification_id     | INTEGER          | Unique notification ID     | PRIMARY KEY, NOT NULL, UNIQUE                                    |
-| facility_id         | INTEGER          | FK to Facility table       | FOREIGN KEY REFERENCES Facility(facility_id), NOT NULL           |
-| user_id             | INTEGER          | FK to User table           | FOREIGN KEY REFERENCES User(user_id), NOT NULL                   |
-| message             | TEXT             | Notification message       | NOT NULL                                                         |
-| timestamp           | TIMESTAMP        | Time sent                  | DEFAULT CURRENT_TIMESTAMP                                        |
+| **Field Name**  | **Data Type** | **Description**        | **Constraints**                                        |
+| --------------- | ------------- | ---------------------- | ------------------------------------------------------ |
+| notification_id | INTEGER       | Unique notification ID | PRIMARY KEY, NOT NULL, UNIQUE                          |
+| facility_id     | INTEGER       | FK to Facility table   | FOREIGN KEY REFERENCES Facility(facility_id), NOT NULL |
+| user_id         | INTEGER       | FK to User table       | FOREIGN KEY REFERENCES User(user_id), NOT NULL         |
+| message         | TEXT          | Notification message   | NOT NULL                                               |
+| timestamp       | TIMESTAMP     | Time sent              | DEFAULT CURRENT_TIMESTAMP                              |
 
 ### 3.5.3.10 Permission Table
 
-| **Field Name**   | **Data Type**   | **Description**         | **Constraints**                                          |
-|------------------|------------------|--------------------------|----------------------------------------------------------|
-| permission_id    | INTEGER          | Unique permission ID     | PRIMARY KEY, NOT NULL, UNIQUE                            |
-| user_id          | INTEGER          | FK to User table         | FOREIGN KEY REFERENCES User(user_id), NOT NULL           |
-| access_level     | ENUM             | Access rights            | ENUM('View','Edit','Manage') NOT NULL                    |
-
+| **Field Name** | **Data Type** | **Description**      | **Constraints**                                |
+| -------------- | ------------- | -------------------- | ---------------------------------------------- |
+| permission_id  | INTEGER       | Unique permission ID | PRIMARY KEY, NOT NULL, UNIQUE                  |
+| user_id        | INTEGER       | FK to User table     | FOREIGN KEY REFERENCES User(user_id), NOT NULL |
+| access_level   | ENUM          | Access rights        | ENUM('View','Edit','Manage') NOT NULL          |
 
 ## 3.6 Design Constraints
 
@@ -1042,22 +1034,21 @@ compliance standards while remaining scalable and secure.
 
 ### 3.5.X System Constraints
 
-| **ID**        | **Constraint**            | **Description**                                                                                                                                                     | **Priority** |
-|---------------|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| REQ_DC001     | Database Scalability      | The system must efficiently handle large volumes of users, reports, events, and notifications while ensuring fast data retrieval and query execution. Indexing and optimized relational mapping should be implemented to maintain performance. | High         |
-| REQ_DC002     | Real-time Notifications   | Facility updates must trigger immediate notifications to affected users, ensuring timely awareness of accessibility changes. Asynchronous processing and message queuing may be required for scalability. | High         |
-| REQ_DC003     | Role-Based Access Control (RBAC) | Role-based permissions must be enforced to control data access for Students, Staff, and Admins, preventing unauthorized actions while ensuring a seamless user experience. | High         |
-| REQ_DC004     | Security & Data Protection | Sensitive user data, including authentication credentials and reports, must be encrypted and stored securely. Secure protocols such as **AES encryption**, **SSL/TLS** for data transmission, and regular security audits should be enforced. | High         |
-| REQ_DC005     | Multi-Platform Compatibility | The system must be accessible across different platforms, including desktops, mobile devices, and tablets, with responsive UI design and adaptive components for various screen resolutions. | Medium       |
-| REQ_DC006     | Accessibility Compliance  | The user interface must comply with **WCAG 2.1 standards**, ensuring usability for individuals with disabilities through features like screen reader compatibility, keyboard navigation, and adjustable contrast settings. | High         |
-| REQ_DC007     | Device & Network Limitations | The system should function on low-end devices and operate efficiently in low-bandwidth environments by optimizing resource usage and minimizing heavy processing requirements. | Medium       |
-| REQ_DC008     | Localization & Language Support | Multi-language functionality should be supported based on user demographics, ensuring accessibility for a diverse audience. | Low          |
-| REQ_DC009     | Server Infrastructure     | The hosting environment must be optimized for **scalability**, **load balancing**, and **failover mechanisms** to maintain system stability during peak usage periods. Cloud-based solutions should be considered for reliability. | High         |
-| REQ_DC010     | Data Privacy & Compliance | The system must comply with global and local data protection laws, including **GDPR**, **CCPA**, and institutional guidelines to protect user privacy and prevent unauthorized data exposure. | High         |
-| REQ_DC011     | Public Facility Regulations | The system must align with government and institutional accessibility policies to ensure proper tracking of infrastructure updates. | High         |
-| REQ_DC012     | Legal Record-Keeping      | Reports and facility updates must be stored securely with **audit logs**, ensuring traceability and preventing data manipulation to maintain accountability. | High         |
-| REQ_DC013     | Copyright & Intellectual Property | The system must enforce copyright compliance, ensuring that all stored and shared content adheres to legal regulations and ethical usage policies. | Medium       |
-
+| **ID**    | **Constraint**                    | **Description**                                                                                                                                                                                                                                | **Priority** |
+| --------- | --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| REQ_DC001 | Database Scalability              | The system must efficiently handle large volumes of users, reports, events, and notifications while ensuring fast data retrieval and query execution. Indexing and optimized relational mapping should be implemented to maintain performance. | High         |
+| REQ_DC002 | Real-time Notifications           | Facility updates must trigger immediate notifications to affected users, ensuring timely awareness of accessibility changes. Asynchronous processing and message queuing may be required for scalability.                                      | High         |
+| REQ_DC003 | Role-Based Access Control (RBAC)  | Role-based permissions must be enforced to control data access for Students, Staff, and Admins, preventing unauthorized actions while ensuring a seamless user experience.                                                                     | High         |
+| REQ_DC004 | Security & Data Protection        | Sensitive user data, including authentication credentials and reports, must be encrypted and stored securely. Secure protocols such as **AES encryption**, **SSL/TLS** for data transmission, and regular security audits should be enforced.  | High         |
+| REQ_DC005 | Multi-Platform Compatibility      | The system must be accessible across different platforms, including desktops, mobile devices, and tablets, with responsive UI design and adaptive components for various screen resolutions.                                                   | Medium       |
+| REQ_DC006 | Accessibility Compliance          | The user interface must comply with **WCAG 2.1 standards**, ensuring usability for individuals with disabilities through features like screen reader compatibility, keyboard navigation, and adjustable contrast settings.                     | High         |
+| REQ_DC007 | Device & Network Limitations      | The system should function on low-end devices and operate efficiently in low-bandwidth environments by optimizing resource usage and minimizing heavy processing requirements.                                                                 | Medium       |
+| REQ_DC008 | Localization & Language Support   | Multi-language functionality should be supported based on user demographics, ensuring accessibility for a diverse audience.                                                                                                                    | Low          |
+| REQ_DC009 | Server Infrastructure             | The hosting environment must be optimized for **scalability**, **load balancing**, and **failover mechanisms** to maintain system stability during peak usage periods. Cloud-based solutions should be considered for reliability.             | High         |
+| REQ_DC010 | Data Privacy & Compliance         | The system must comply with global and local data protection laws, including **GDPR**, **CCPA**, and institutional guidelines to protect user privacy and prevent unauthorized data exposure.                                                  | High         |
+| REQ_DC011 | Public Facility Regulations       | The system must align with government and institutional accessibility policies to ensure proper tracking of infrastructure updates.                                                                                                            | High         |
+| REQ_DC012 | Legal Record-Keeping              | Reports and facility updates must be stored securely with **audit logs**, ensuring traceability and preventing data manipulation to maintain accountability.                                                                                   | High         |
+| REQ_DC013 | Copyright & Intellectual Property | The system must enforce copyright compliance, ensuring that all stored and shared content adheres to legal regulations and ethical usage policies.                                                                                             | Medium       |
 
 ### **3.7 Software System Attributes** These attributes define the overall quality and operational characteristics of the Campus Accessibility Navigation System (CANS):
 
@@ -1116,9 +1107,9 @@ compliance standards while remaining scalable and secure.
 > The system shall support a 20% annual increase in users without
 > requiring architectural changes.
 
-### 
+###
 
-### **3.8 Supporting Information** 
+### **3.8 Supporting Information**
 
 > Balancing \"Must-Have\" Minorities:This section provides context for
 > the system's requirements based on the Kano Model survey conducted
@@ -1158,14 +1149,13 @@ compliance standards while remaining scalable and secure.
 
 ### 3.5.X Kano Analysis Summary
 
-| **Feature**               | **Kano Category** | **Counts**          | **Linked Requirements** | **Interpretation**                                                                 |
-|---------------------------|-------------------|----------------------|--------------------------|-------------------------------------------------------------------------------------|
-| Accessible routes across campus | Indifferent        | I:25, A:15, E:1, M:3 | RQ-01, FN-02             | Neutral reception; prioritized due to institutional accessibility mandates.        |
-| Real-time elevator outage alerts | Indifferent      | I:23, A:14, R:2, M:5 | RQ-02, FN-03             | Some users expect alerts (M), but most indifferent. Critical for compliance.       |
-| Live construction/path information | Indifferent    | I:21, A:17, R:2, M:4 | RQ-02, FN-03             | Helpful for safety; retained despite neutral feedback.                             |
-| Event-based rerouting     | Indifferent        | I:21, A:14, M:7, R:1 | RQ-04, RQ-09             | Notable "Must-Have" (M) subgroup justified inclusion.                              |
-| Speech/screen reader support | Indifferent      | I:27, A:14, M:3      | RQ-14                    | Basic accessibility expectation; required for WCAG 2.1 compliance.                 |
-
+| **Feature**                        | **Kano Category** | **Counts**           | **Linked Requirements** | **Interpretation**                                                           |
+| ---------------------------------- | ----------------- | -------------------- | ----------------------- | ---------------------------------------------------------------------------- |
+| Accessible routes across campus    | Indifferent       | I:25, A:15, E:1, M:3 | RQ-01, FN-02            | Neutral reception; prioritized due to institutional accessibility mandates.  |
+| Real-time elevator outage alerts   | Indifferent       | I:23, A:14, R:2, M:5 | RQ-02, FN-03            | Some users expect alerts (M), but most indifferent. Critical for compliance. |
+| Live construction/path information | Indifferent       | I:21, A:17, R:2, M:4 | RQ-02, FN-03            | Helpful for safety; retained despite neutral feedback.                       |
+| Event-based rerouting              | Indifferent       | I:21, A:14, M:7, R:1 | RQ-04, RQ-09            | Notable "Must-Have" (M) subgroup justified inclusion.                        |
+| Speech/screen reader support       | Indifferent       | I:27, A:14, M:3      | RQ-14                   | Basic accessibility expectation; required for WCAG 2.1 compliance.           |
 
 > Key: I: Indifferent, A: Attractive, M: Must-Have, R: Reverse, E:
 > Excitement
@@ -1178,7 +1168,7 @@ compliance standards while remaining scalable and secure.
 > (RQ-01) and screen reader support (RQ-14) were prioritized to comply
 > with university accessibility policies and WCAG 2.1 standards.
 
-- 
+-
 
 > Features with notable \"Must-Have\" votes (e.g., event-based
 > rerouting) were prioritized to serve niche but critical user needs.
@@ -1201,11 +1191,11 @@ compliance standards while remaining scalable and secure.
 > • Survey Design: can be seen from the link
 > [[https://docs.google.com/forms/d/e/1FAIpQLSc9RD4jTCL5mbspPtAizovIrXu8ecASnML_RfMZHT-r71SQIw/viewform?usp=header]{.underline}](https://docs.google.com/forms/d/e/1FAIpQLSc9RD4jTCL5mbspPtAizovIrXu8ecASnML_RfMZHT-r71SQIw/viewform?usp=header)
 
-### 
+###
 
-### 
+###
 
-## 
+##
 
 ## **4. Verification**
 
@@ -1232,20 +1222,19 @@ verification method, success criteria, and tools used for testing.
 
 ### 3.5.X Performance Validation Criteria
 
-| **Requirement**        | **Verification Method**                               | **Tools/Techniques**         | **Success Criteria**                                                       |
-|------------------------|--------------------------------------------------------|-------------------------------|----------------------------------------------------------------------------|
-| Route generation ≤ 2 seconds | Simulate 500 concurrent users requesting routes; measure average response time. | JMeter, Postman             | 95% of requests complete within 2 seconds.                                |
-| Alerts ≤ 10 seconds    | Trigger an elevator outage and measure time until the alert appears on user devices. | Selenium, Manual Testing     | Alert delivered within 10 seconds to all affected users.                   |
-| Report submission ≤ 5 seconds | Submit 100 reports with photos simultaneously; track processing time. | JMeter, AWS LoadRunner       | All reports saved within 5 seconds.                                        |
-| Handle 1,000+ concurrent users | Simulate 1,200 users accessing the system during peak hours (8 AM–5 PM). | LoadNinja, BlazeMeter        | No errors or crashes; response times remain within acceptable thresholds.  |
-| 99.5% uptime           | Monitor system availability over 30 days using uptime tracking tools. | Nagios, UptimeRobot          | System available ≥ 99.5% of the time, excluding scheduled maintenance.     |
-| 100+ updates/second    | Send 150 updates/second to the Facilities API and monitor processing latency. | Postman, AWS Lambda          | API processes ≥ 100 updates/second with ≤ 500ms latency.                   |
-| Load time ≤ 3 seconds  | Test page load times on mobile (Chrome, Safari) and desktop (Firefox, Edge) browsers. | Google Lighthouse, WebPageTest | All pages load within 3 seconds on devices with ≥ 5-inch screens.         |
-| Geolocation ≤ 5m accuracy | Compare system-reported user location with GPS benchmarks in outdoor campus areas. | GPS Visualizer, Manual Testing | Location accuracy within 5 meters for 95% of tests.                        |
-| Admin reports ≤ 30 seconds | Generate a usage report covering 6 months of data; measure processing time. | MySQL Workbench, Custom Scripts | Report generated within 30 seconds.                                       |
-| Recovery ≤ 5 minutes   | Simulate a server crash and measure time to restore functionality. | AWS CloudWatch, Manual Testing | System fully operational within 5 minutes.                                |
-| Server capacity ≤ 80%  | Monitor CPU/memory usage during peak load (1,200 users). | New Relic, Datadog            | Server resource usage never exceeds 80%.                                   |
-
+| **Requirement**                | **Verification Method**                                                               | **Tools/Techniques**            | **Success Criteria**                                                      |
+| ------------------------------ | ------------------------------------------------------------------------------------- | ------------------------------- | ------------------------------------------------------------------------- |
+| Route generation ≤ 2 seconds   | Simulate 500 concurrent users requesting routes; measure average response time.       | JMeter, Postman                 | 95% of requests complete within 2 seconds.                                |
+| Alerts ≤ 10 seconds            | Trigger an elevator outage and measure time until the alert appears on user devices.  | Selenium, Manual Testing        | Alert delivered within 10 seconds to all affected users.                  |
+| Report submission ≤ 5 seconds  | Submit 100 reports with photos simultaneously; track processing time.                 | JMeter, AWS LoadRunner          | All reports saved within 5 seconds.                                       |
+| Handle 1,000+ concurrent users | Simulate 1,200 users accessing the system during peak hours (8 AM–5 PM).              | LoadNinja, BlazeMeter           | No errors or crashes; response times remain within acceptable thresholds. |
+| 99.5% uptime                   | Monitor system availability over 30 days using uptime tracking tools.                 | Nagios, UptimeRobot             | System available ≥ 99.5% of the time, excluding scheduled maintenance.    |
+| 100+ updates/second            | Send 150 updates/second to the Facilities API and monitor processing latency.         | Postman, AWS Lambda             | API processes ≥ 100 updates/second with ≤ 500ms latency.                  |
+| Load time ≤ 3 seconds          | Test page load times on mobile (Chrome, Safari) and desktop (Firefox, Edge) browsers. | Google Lighthouse, WebPageTest  | All pages load within 3 seconds on devices with ≥ 5-inch screens.         |
+| Geolocation ≤ 5m accuracy      | Compare system-reported user location with GPS benchmarks in outdoor campus areas.    | GPS Visualizer, Manual Testing  | Location accuracy within 5 meters for 95% of tests.                       |
+| Admin reports ≤ 30 seconds     | Generate a usage report covering 6 months of data; measure processing time.           | MySQL Workbench, Custom Scripts | Report generated within 30 seconds.                                       |
+| Recovery ≤ 5 minutes           | Simulate a server crash and measure time to restore functionality.                    | AWS CloudWatch, Manual Testing  | System fully operational within 5 minutes.                                |
+| Server capacity ≤ 80%          | Monitor CPU/memory usage during peak load (1,200 users).                              | New Relic, Datadog              | Server resource usage never exceeds 80%.                                  |
 
 ## **Verification Process**
 
@@ -1273,29 +1262,27 @@ Pass: All success criteria are met for ≥ 95% of test cases.\
 Fail: Any critical requirement (e.g., uptime, route generation) fails
 more than 5% of tests.
 
-### 
+###
 
 ### **4.3 Usability Verification**
 
-| **Requirement**  | **Verification Method**              | **Success Criteria**                        | **Possible Tools**     |
-|------------------|--------------------------------------|---------------------------------------------|------------------------|
-| Learnability     | Observe 10 new users performing core tasks. | 90% complete tasks within 5 minutes.       | UserTesting.com        |
-| Efficiency       | Log clicks for 50 route-planning sessions. | ≤ 3 clicks to generate a route.            | Hotjar, Google Analytics |
-| Error Recovery   | Simulate 20 erroneous form submissions. | 100% receive actionable error messages.     | Jest, Selenium         |
-| Satisfaction     | Post-release survey (Likert scale 1–5). | ≥ 4.0 average satisfaction score.          | SurveyMonkey           |
+| **Requirement** | **Verification Method**                     | **Success Criteria**                    | **Possible Tools**       |
+| --------------- | ------------------------------------------- | --------------------------------------- | ------------------------ |
+| Learnability    | Observe 10 new users performing core tasks. | 90% complete tasks within 5 minutes.    | UserTesting.com          |
+| Efficiency      | Log clicks for 50 route-planning sessions.  | ≤ 3 clicks to generate a route.         | Hotjar, Google Analytics |
+| Error Recovery  | Simulate 20 erroneous form submissions.     | 100% receive actionable error messages. | Jest, Selenium           |
+| Satisfaction    | Post-release survey (Likert scale 1–5).     | ≥ 4.0 average satisfaction score.       | SurveyMonkey             |
 
-
-### 
+###
 
 ### **4.4 Interface Verification**
 
-| **Component**    | **Test**                             | **Success Criteria**         | **Possible Tools**        |
-|------------------|--------------------------------------|-------------------------------|---------------------------|
-| Facilities API   | Mock outage data → validate alert triggers. | Alerts appear within 10 seconds. | Postman, Jest            |
-| Event Calendar Sync | Compare iCal feed with CANS event listings. | 100% data parity after sync.     | Python scripts            |
-| GPS Accuracy     | Test at 10 campus landmarks.         | Location accuracy ≤ 5m.       | Google Maps API           |
-| Cross-Browser Support | Render UI on Chrome, Safari, Firefox, Edge. | Consistent functionality         | BrowserStack              |
-
+| **Component**         | **Test**                                    | **Success Criteria**             | **Possible Tools** |
+| --------------------- | ------------------------------------------- | -------------------------------- | ------------------ |
+| Facilities API        | Mock outage data → validate alert triggers. | Alerts appear within 10 seconds. | Postman, Jest      |
+| Event Calendar Sync   | Compare iCal feed with CANS event listings. | 100% data parity after sync.     | Python scripts     |
+| GPS Accuracy          | Test at 10 campus landmarks.                | Location accuracy ≤ 5m.          | Google Maps API    |
+| Cross-Browser Support | Render UI on Chrome, Safari, Firefox, Edge. | Consistent functionality         | BrowserStack       |
 
 **Verification Process:**
 
@@ -1303,7 +1290,7 @@ more than 5% of tests.
 
 - Pass/Fail: ≥ 95% success rate for all criteria.
 
-### 
+###
 
 ### **4.5 Logical Database Verification**
 
@@ -1325,19 +1312,18 @@ and real-time data processing requirements.]{.mark}
 
 ### **4.5.1 Verification Procedures**
 
-| **Verification Step**       | **Description**                                                                                   |
-|----------------------------|---------------------------------------------------------------------------------------------------|
-| Schema Validation          | Ensures all tables, primary keys, and foreign keys are properly defined according to relational database principles. |
-| Referential Integrity      | Confirms that all foreign key constraints correctly enforce relationships and prevent orphaned records. |
-| Normalization Check        | Validates that the schema follows **normalization rules (up to 3NF)** to minimize data redundancy and ensure efficient data storage. |
-| Data Type Accuracy         | Verifies that each column has the appropriate data type to maintain data consistency and prevent processing errors. |
-| Unique & Not Null Constraints | Ensures primary keys are **unique**, and mandatory fields are enforced using **NOT NULL constraints**. |
-| Index Optimization         | Confirms that indexes are correctly applied to frequently queried fields, improving database query efficiency. |
-| Relationship Consistency   | Verifies that **one-to-many (1:M), many-to-one (M:1), and one-to-one (1:1)** relationships between entities align with expected system behavior. |
-| Security & Access Controls | Validates that **role-based permissions** are correctly implemented to prevent unauthorized access and protect sensitive data. |
+| **Verification Step**         | **Description**                                                                                                                                  |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Schema Validation             | Ensures all tables, primary keys, and foreign keys are properly defined according to relational database principles.                             |
+| Referential Integrity         | Confirms that all foreign key constraints correctly enforce relationships and prevent orphaned records.                                          |
+| Normalization Check           | Validates that the schema follows **normalization rules (up to 3NF)** to minimize data redundancy and ensure efficient data storage.             |
+| Data Type Accuracy            | Verifies that each column has the appropriate data type to maintain data consistency and prevent processing errors.                              |
+| Unique & Not Null Constraints | Ensures primary keys are **unique**, and mandatory fields are enforced using **NOT NULL constraints**.                                           |
+| Index Optimization            | Confirms that indexes are correctly applied to frequently queried fields, improving database query efficiency.                                   |
+| Relationship Consistency      | Verifies that **one-to-many (1:M), many-to-one (M:1), and one-to-one (1:1)** relationships between entities align with expected system behavior. |
+| Security & Access Controls    | Validates that **role-based permissions** are correctly implemented to prevent unauthorized access and protect sensitive data.                   |
 
-
-### 
+###
 
 ### **4.6 Design Constraints Verification**
 
@@ -1360,22 +1346,21 @@ categories.]{.mark}
 
 ### **4.5.2 Design Constraint Verification Table**
 
-| **ID**         | **Constraint**              | **Verification Method**                                                                 |
-|----------------|-----------------------------|------------------------------------------------------------------------------------------|
-| REQ_DC001      | Database Scalability        | Load testing and stress tests will be conducted to measure the system’s ability to handle increasing data volumes efficiently. |
-| REQ_DC002      | Real-Time Notifications     | System stress testing and event simulations will confirm timely notification delivery without delays. |
-| REQ_DC003      | Role-Based Access Control (RBAC) | Unit testing will validate user permissions by ensuring restricted access for different roles. |
-| REQ_DC004      | Security & Data Protection  | Security audits, penetration testing, and encryption validation will ensure data is protected against unauthorized access. |
-| REQ_DC005      | Multi-Platform Compatibility | Cross-device testing across desktop, mobile, and tablet interfaces will verify UI adaptability and performance. |
-| REQ_DC006      | Accessibility Compliance    | WCAG 2.1 compliance testing will ensure usability for individuals with disabilities, including screen reader and keyboard navigation tests. |
-| REQ_DC007      | Device & Network Limitations | Performance testing on low-end devices and simulations in low-bandwidth environments will verify system efficiency. |
-| REQ_DC008      | Localization & Language Support | Language selection testing and UI validation will ensure accurate translations and proper layout adjustments. |
-| REQ_DC009      | Server Infrastructure       | Load balancing and failover testing will validate system reliability during peak traffic and hardware failures. |
-| REQ_DC010      | Data Privacy & Compliance   | GDPR and data protection compliance audits will be performed to ensure secure user data handling. |
-| REQ_DC011      | Public Facility Regulations | Institutional review and accessibility policy validation will confirm adherence to facility management standards. |
-| REQ_DC012      | Legal Record-Keeping        | Automated logging and integrity tests will verify accurate storage of reports and facility updates for auditing purposes. |
-| REQ_DC013      | Copyright & Intellectual Property | Legal review of digital content storage and distribution policies will ensure compliance with copyright regulations. |
-
+| **ID**    | **Constraint**                    | **Verification Method**                                                                                                                     |
+| --------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| REQ_DC001 | Database Scalability              | Load testing and stress tests will be conducted to measure the system’s ability to handle increasing data volumes efficiently.              |
+| REQ_DC002 | Real-Time Notifications           | System stress testing and event simulations will confirm timely notification delivery without delays.                                       |
+| REQ_DC003 | Role-Based Access Control (RBAC)  | Unit testing will validate user permissions by ensuring restricted access for different roles.                                              |
+| REQ_DC004 | Security & Data Protection        | Security audits, penetration testing, and encryption validation will ensure data is protected against unauthorized access.                  |
+| REQ_DC005 | Multi-Platform Compatibility      | Cross-device testing across desktop, mobile, and tablet interfaces will verify UI adaptability and performance.                             |
+| REQ_DC006 | Accessibility Compliance          | WCAG 2.1 compliance testing will ensure usability for individuals with disabilities, including screen reader and keyboard navigation tests. |
+| REQ_DC007 | Device & Network Limitations      | Performance testing on low-end devices and simulations in low-bandwidth environments will verify system efficiency.                         |
+| REQ_DC008 | Localization & Language Support   | Language selection testing and UI validation will ensure accurate translations and proper layout adjustments.                               |
+| REQ_DC009 | Server Infrastructure             | Load balancing and failover testing will validate system reliability during peak traffic and hardware failures.                             |
+| REQ_DC010 | Data Privacy & Compliance         | GDPR and data protection compliance audits will be performed to ensure secure user data handling.                                           |
+| REQ_DC011 | Public Facility Regulations       | Institutional review and accessibility policy validation will confirm adherence to facility management standards.                           |
+| REQ_DC012 | Legal Record-Keeping              | Automated logging and integrity tests will verify accurate storage of reports and facility updates for auditing purposes.                   |
+| REQ_DC013 | Copyright & Intellectual Property | Legal review of digital content storage and distribution policies will ensure compliance with copyright regulations.                        |
 
 ### **4.7 Software System Attributes Verification**
 
@@ -1385,16 +1370,15 @@ the system meets operational, performance, and compliance expectations.
 
 ### **4.5.3 Quality Attributes Verification Table**
 
-| **Attribute**    | **Verification Method**                                                                 | **Success Criteria**                                                                 |
-|------------------|------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| Reliability      | Conduct continuous usage simulations under normal and peak load conditions.             | ≤ 1 critical failure per month; data (e.g., reports, routes) saved without loss.      |
-| Availability     | Monitor system uptime via tools (e.g., UptimeRobot, Nagios) over a 30-day window.       | ≥ 99.5% uptime (excluding ≤ 2 hours/month for scheduled maintenance).                 |
-| Security         | Perform penetration testing, encryption validation, and access control testing.         | AES-256 encryption, secure password storage, no unauthorized access to any feature.   |
-| Maintainability  | Review source code modularity and documentation; evaluate backup systems.               | Clear module boundaries; daily backups confirmed; future updates supported easily.    |
-| Portability      | Conduct compatibility testing across Chrome, Safari, Edge, and Firefox on various devices. | The system functions properly on all tested devices and browsers.                  |
-| Compliance       | Validate system against WCAG 2.1 AA accessibility standards and GDPR/CCPA guidelines.   | Full WCAG 2.1 AA compliance; no unencrypted user data; user privacy settings active.   |
-| Scalability      | Simulate 20% annual user growth and measure system performance and resource usage.      | System performs smoothly without architectural changes or performance degradation.    |
-
+| **Attribute**   | **Verification Method**                                                                    | **Success Criteria**                                                                 |
+| --------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
+| Reliability     | Conduct continuous usage simulations under normal and peak load conditions.                | ≤ 1 critical failure per month; data (e.g., reports, routes) saved without loss.     |
+| Availability    | Monitor system uptime via tools (e.g., UptimeRobot, Nagios) over a 30-day window.          | ≥ 99.5% uptime (excluding ≤ 2 hours/month for scheduled maintenance).                |
+| Security        | Perform penetration testing, encryption validation, and access control testing.            | AES-256 encryption, secure password storage, no unauthorized access to any feature.  |
+| Maintainability | Review source code modularity and documentation; evaluate backup systems.                  | Clear module boundaries; daily backups confirmed; future updates supported easily.   |
+| Portability     | Conduct compatibility testing across Chrome, Safari, Edge, and Firefox on various devices. | The system functions properly on all tested devices and browsers.                    |
+| Compliance      | Validate system against WCAG 2.1 AA accessibility standards and GDPR/CCPA guidelines.      | Full WCAG 2.1 AA compliance; no unencrypted user data; user privacy settings active. |
+| Scalability     | Simulate 20% annual user growth and measure system performance and resource usage.         | System performs smoothly without architectural changes or performance degradation.   |
 
 ### **4.8 Supporting Information Verification**
 
@@ -1416,13 +1400,13 @@ indicated mixed priorities.
 
 ### **4.6 Design Justification Based on Kano Model**
 
-| **Feature**             | **Kano Category**              | **Design Justification**                                                |
-|-------------------------|--------------------------------|-------------------------------------------------------------------------|
-| Accessible routes       | Mostly Indifferent             | Prioritized for compliance with accessibility standards.                |
-| Elevator outage alerts  | Indifferent / Must-Have        | Included due to compliance needs and safety concerns.                   |
-| Construction/path disruptions | Indifferent / Attractive | Important for accurate real-time routing.                               |
-| Event accessibility filtering | Some Must-Have responses  | Retained to support inclusive campus event participation.               |
-| Screen reader/speech support | Indifferent / Must-Have   | Required for WCAG 2.1 compliance and inclusive design.                  |
+| **Feature**                   | **Kano Category**        | **Design Justification**                                  |
+| ----------------------------- | ------------------------ | --------------------------------------------------------- |
+| Accessible routes             | Mostly Indifferent       | Prioritized for compliance with accessibility standards.  |
+| Elevator outage alerts        | Indifferent / Must-Have  | Included due to compliance needs and safety concerns.     |
+| Construction/path disruptions | Indifferent / Attractive | Important for accurate real-time routing.                 |
+| Event accessibility filtering | Some Must-Have responses | Retained to support inclusive campus event participation. |
+| Screen reader/speech support  | Indifferent / Must-Have  | Required for WCAG 2.1 compliance and inclusive design.    |
 
 **4.8.3 Elicitation Gaps & Adjustments**
 
@@ -1467,100 +1451,109 @@ Refer to [[Section
 -- Definitions -- for the full list of acronyms and abbreviations used
 in this document.
 
-
 ## **6. Supporting Information**
 
 ### **6.1 Validation Sessions**
 
-| **Session ID** | **Date and Time**     | **Technique** | **Section Reviewed**  | **Participant & Role**                                              | **No. of Defect** |
-|----------------|-----------------------|---------------|-----------------------|---------------------------------------------------------------------|-------------------|
-| VS-01          | 22/6/2025; 7am–1pm    | Inspection    | 3.1, 3.2, 3.3, 3.5    | Naqib                                                               | 4                 |
-| VS-00          | 3/6/2025; 2pm–6pm     | Inspection    | 3.4,              | Chen (Inspector), Dana (Author), Ben (Presenter), Alice (Inspector) | 5                 |
-
+| **Session ID** | **Date and Time**  | **Technique** | **Section Reviewed** | **Participant & Role**                                              | **No. of Defect** |
+| -------------- | ------------------ | ------------- | -------------------- | ------------------------------------------------------------------- | ----------------- |
+| VS-01          | 22/6/2025; 7am–1pm | Inspection    | 3.1, 3.2, 3.3, 3.5   | Naqib                                                               | 4                 |
+| VS-00          | 3/6/2025; 2pm–6pm  | Inspection    | 3.4, 3.5             | Chen (Inspector), Dana (Author), Ben (Presenter), Alice (Inspector) | 5                 |
+| VS-02          | 22/6/2025; 2pm–4pm | Inspection    | 3.5–3.8              | Harith                                                              | 9                 |
 
 ### **6.2 Defect Summary**
 
 #### **A. Content Defects**
 
-| **Req ID** | **Section** | **Validation and Defect Description**                     | **Detected By** | **Comment/Suggested Fix**        | **Session ID** | **Severity (1–5)** |
-|------------|-------------|---------------------------------------------------------- |-----------------|----------------------------------|----------------|--------------------|
-| REQ-001    | 3.1.3       | The use case name doesn’t match the section title         | Naqib           | Rename Use Case ID to "Accessibility Issue Reporting"    | VS-01          | 3                  |
-| REQ-002    | 3.1.8       | The section title and use case describe unrelated actions | Naqib           | Rename Use Case ID to "Manage Event Information"         | VS-01          | 4                  |
-| -          | -           | Missing acceptance criteria                               | Example         | Define measurable outcomes       | VS-00          | 4                  |
-| -          | -           | Missing acceptance criteria                               | Example         | Define measurable outcomes       | VS-00          | 4                  |
-| -          | -           | “Fast” not defined                                        | Example         | ≤ 2s response time               | VS-00          | 3                  |
+| **Req ID** | **Section** | **Validation and Defect Description**                     | **Detected By** | **Comment/Suggested Fix**                             | **Session ID** | **Severity (1–5)** |
+| ---------- | ----------- | --------------------------------------------------------- | --------------- | ----------------------------------------------------- | -------------- | ------------------ |
+| REQ-001    | 3.1.3       | The use case name doesn’t match the section title         | Naqib           | Rename Use Case ID to "Accessibility Issue Reporting" | VS-01          | 3                  |
+| REQ-002    | 3.1.8       | The section title and use case describe unrelated actions | Naqib           | Rename Use Case ID to "Manage Event Information"      | VS-01          | 4                  |
+| -          | -           | Missing acceptance criteria                               | Example         | Define measurable outcomes                            | VS-00          | 4                  |
+| -          | -           | Missing acceptance criteria                               | Example         | Define measurable outcomes                            | VS-00          | 4                  |
+| -          | -           | “Fast” not defined                                        | Example         | ≤ 2s response time                                    | VS-00          | 3                  |
 
+| **Req ID** | **Section** | **Defect Description**                   | **Detected By** | **Suggested Fix**                                        | **Session ID** | **Severity (1–5)** |
+| ---------- | ----------- | ---------------------------------------- | --------------- | -------------------------------------------------------- | -------------- | ------------------ |
+| -          | 3.5         | ERD not referenced                       | harith          | Add note: “Refer to Section X or Appendix A for the ERD” | VS-02          | 2                  |
+| -          | 3.7         | Maintainability lacks method explanation | Harith          | Add: Inline comments, dev guide, version control, CI/CD  | VS-02          | 2                  |
 
 #### **B. Documentation Defects**
 
-| **Req ID** | **Section** | **Validation and Defect Description**  | **Detected By**  | **Comment/Suggested Fix** | **Session ID** | **Severity (1–5)** |
-|------------|-------------|----------------------------------------|-----------------|----------------------------|----------------|--------------------|
-| REQ-003    | 3.1.2       | Typo in title: “Routet”                | Naqib           | Change to “Route”          | VS-01          | 1                  |
-| -          | -           | Outdated policy reference              | Example         | Replace with Policy 102    | VS-00          | 2                  |
+| **Req ID** | **Section** | **Validation and Defect Description** | **Detected By** | **Comment/Suggested Fix** | **Session ID** | **Severity (1–5)** |
+| ---------- | ----------- | ------------------------------------- | --------------- | ------------------------- | -------------- | ------------------ |
+| REQ-003    | 3.1.2       | Typo in title: “Routet”               | Naqib           | Change to “Route”         | VS-01          | 1                  |
+| -          | -           | Outdated policy reference             | Example         | Replace with Policy 102   | VS-00          | 2                  |
+
+| **Req ID** | **Section** | **Validation and Defect Description**             | **Detected By** | **Comment/Suggested Fix**      | **Session ID** | **Severity (1–5)** |
+| ---------- | ----------- | ------------------------------------------------- | --------------- | ------------------------------ | -------------- | ------------------ |
+| -          | 3.5         | “Stuff Table” label used instead of “Staff Table” | Harith          | Correct label to “Staff Table” | VS-02          | 2                  |
+| -          | 3.5         | “Filed Name” typo repeated in multiple tables     | Harith          | Replace with “Field Name”      | VS-02          | 2                  |
+| -          | 3.8         | Kano summary hard to read                         |
 
 #### **C. Agreement Defects**
 
-| **Req ID** | **Section** | **Validation Description / Stakeholder Concern** | **Mismatch**               | **Detected By** | **Session ID** | **Severity (1–5)** |
-|------------|-------------|--------------------------------------------------|-----------------------------|-----------------|----------------|--------------------|
-| REQ-004    | 3.2.4       | 100+ updates per second seems unrealistic        | Not practical or feasible   | Naqib               | VS-01          | 5                  |
-| -          | -           | 24/7 uptime without failover                     | Operational feasibility gap | Example             | VS-00          | 5                  |
+| **Req ID** | **Section** | **Validation Description / Stakeholder Concern** | **Mismatch**                | **Detected By** | **Session ID** | **Severity (1–5)** |
+| ---------- | ----------- | ------------------------------------------------ | --------------------------- | --------------- | -------------- | ------------------ |
+| REQ-004    | 3.2.4       | 100+ updates per second seems unrealistic        | Not practical or feasible   | Naqib           | VS-01          | 5                  |
+| -          | -           | 24/7 uptime without failover                     | Operational feasibility gap | Example         | VS-00          | 5                  |
 
-
+| **Req ID** | **Section** | **Validation Description / Stakeholder Concern**             | **Mismatch**                          | **Detected By** | **Session ID** | **Severity (1–5)** |
+| ---------- | ----------- | ------------------------------------------------------------ | ------------------------------------- | --------------- | -------------- | ------------------ |
+| -          | 3.7         | Security & accessibility included but not linked to feedback | No justification from user side       | Harith          | VS-02          | 3                  |
+| -          | 3.8         | No comment on low stakeholder diversity                      | Missing follow-up on limited feedback | Harith          | VS-02          | 3                  |
 
 ### **6.3 Conflict Analysis**
 
-| **Conflict ID** | **Conflict Description**         | **Conflict Analysis**                                                                                                                                                 | **Stakeholders Involved** | **Session ID** |
-|-----------------|----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|----------------|
-| CF-01           | Performance vs cost tradeoff     | Interest conflict – the QA and Development teams prioritized high performance, while the Product Owner (PO) emphasized minimizing costs. The underlying cause is differing role-based objectives: QA and Dev aim to ensure system reliability and responsiveness, while PO focuses on budget. | PO, QA, Dev Team           | VS-01          |
-
+| **Conflict ID** | **Conflict Description**     | **Conflict Analysis**                                                                                                                                                                                                                                                                         | **Stakeholders Involved** | **Session ID** |
+| --------------- | ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | -------------- |
+| CF-01           | Performance vs cost tradeoff | Interest conflict – the QA and Development teams prioritized high performance, while the Product Owner (PO) emphasized minimizing costs. The underlying cause is differing role-based objectives: QA and Dev aim to ensure system reliability and responsiveness, while PO focuses on budget. | PO, QA, Dev Team          | VS-01          |
 
 ### **6.4 Conflict Resolution**
 
-| **Conflict ID** | **Conflict Resolution Strategy**                                                                                          | **Resolved (Y/N)** | **Outcome (If Resolved)**                                                                                 | **Justification**                                                                                                                |
-|-----------------|----------------------------------------------------------------------------------------------------------------------------|--------------------|-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| CF-01           | Structured negotiation facilitated by the Scrum Master, including trade-off analysis and review of stakeholder priorities. | Y                  | Agreement reached to prioritize performance, with acceptable cost adjustments approved by the PO.         | The resolution process considered stakeholder goals and project constraints, resulting in a sustainable and well-justified agreement. |
+| **Conflict ID** | **Conflict Resolution Strategy**                                                                                           | **Resolved (Y/N)** | **Outcome (If Resolved)**                                                                         | **Justification**                                                                                                                     |
+| --------------- | -------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| CF-01           | Structured negotiation facilitated by the Scrum Master, including trade-off analysis and review of stakeholder priorities. | Y                  | Agreement reached to prioritize performance, with acceptable cost adjustments approved by the PO. | The resolution process considered stakeholder goals and project constraints, resulting in a sustainable and well-justified agreement. |
 
 ---
 
 ### **6.5 Change Log**
 
-| **Change ID** | **Req ID(s)** | **Summary of Change**           | **Proposed By** | **Date**       | **Session ID** |
-|---------------|---------------|----------------------------------|-----------------|----------------|----------------|
-| CH-01         | REQ-001       | Added acceptance criteria       | Alice           | dd-mm-yyyy     | VS-01          |
-| CH-02         | REQ-012       | Adjusted uptime expectation     | Ben             | dd-mm-yyyy     | VS-02          |
+| **Change ID** | **Req ID(s)** | **Summary of Change**       | **Proposed By** | **Date**   | **Session ID** |
+| ------------- | ------------- | --------------------------- | --------------- | ---------- | -------------- |
+| CH-01         | REQ-001       | Added acceptance criteria   | Alice           | dd-mm-yyyy | VS-01          |
+| CH-02         | REQ-012       | Adjusted uptime expectation | Ben             | dd-mm-yyyy | VS-02          |
 
 ---
 
 ### **6.6 Requirements Traceability Matrix**
 
-| **Req ID** | **Requirement Description**  | **Linked Goal(s)** | **Feature(s)** | **Use Case(s)** | **Traceability Score (1–4)** | **Description**                                                              |
-|-----------|-------------------------------|---------------------|----------------|------------------|-------------------------------|------------------------------------------------------------------------------|
-| REQ-001   | System shall respond <2s       | G1                  | F1             | UC-01            | 4                             | Linked to 3 artifacts with high confidence, correctness, and completeness   |
-| REQ-004   | Real-time notifications        | G2                  | F3             | UC-04            | 3                             | Linked to 3 artifacts, but links may be basic or unverified                 |
+| **Req ID** | **Requirement Description** | **Linked Goal(s)** | **Feature(s)** | **Use Case(s)** | **Traceability Score (1–4)** | **Description**                                                           |
+| ---------- | --------------------------- | ------------------ | -------------- | --------------- | ---------------------------- | ------------------------------------------------------------------------- |
+| REQ-001    | System shall respond <2s    | G1                 | F1             | UC-01           | 4                            | Linked to 3 artifacts with high confidence, correctness, and completeness |
+| REQ-004    | Real-time notifications     | G2                 | F3             | UC-04           | 3                            | Linked to 3 artifacts, but links may be basic or unverified               |
 
 ---
 
 ### **6.7 Roles in Validation & Management**
 
-| **Name** | **Primary Responsibility**                                     | **No. of Sessions Participated** |
-|---------|---------------------------------------------------------------  |----------------------------------|
-| Alice   | Content validation, traceability matrix                         | 2                                |
-| Ben     | GitHub version control, changelog maintenance, conflict logging | 2                                |
-| Chen    | Conflict analysis, stakeholder concern tracking                 | 2                                |
-| Dana    | Documentation review, defect classification                     | 1                                |
+| **Name** | **Primary Responsibility**                                      | **No. of Sessions Participated** |
+| -------- | --------------------------------------------------------------- | -------------------------------- |
+| Alice    | Content validation, traceability matrix                         | 2                                |
+| Ben      | GitHub version control, changelog maintenance, conflict logging | 2                                |
+| Chen     | Conflict analysis, stakeholder concern tracking                 | 2                                |
+| Dana     | Documentation review, defect classification                     | 1                                |
 
 ---
 
 ### **6.8 Version Control & Configuration**
 
-| **Repo Branch**          | **Key Files**                                                                 |
-|--------------------------|-------------------------------------------------------------------------------|
-| `project-part-2`         | - `SRS.md`: Working version of updated SRS                                    |
-|                          | - `TTXL_GX_SRS.doc`: Final version                                            |
-|                          | - `changelog.md`: Record of all requirement-related changes                   |
-|                          |                                                                               |
-| **Commits by StudentX**                 | XX                                                             |
-| **Pull Requests Merged by StudentX**    | XX                                                             |
-| **Change Log Entries Made by StudentX** | XX                                                             |
-
-
+| **Repo Branch**                         | **Key Files**                                               |
+| --------------------------------------- | ----------------------------------------------------------- |
+| `project-part-2`                        | - `SRS.md`: Working version of updated SRS                  |
+|                                         | - `TTXL_GX_SRS.doc`: Final version                          |
+|                                         | - `changelog.md`: Record of all requirement-related changes |
+|                                         |                                                             |
+| **Commits by StudentX**                 | XX                                                          |
+| **Pull Requests Merged by StudentX**    | XX                                                          |
+| **Change Log Entries Made by StudentX** | XX                                                          |
