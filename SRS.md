@@ -8,10 +8,10 @@ height="1.8333333333333333in"}
 ### **Team Members**
 
 | **NAME**                          | **STUDENT ID**   |
-|----------------------------------|------------------|
-| Iusupov Alimzhan                 | 1231301318       |
-| Galal Osman Galal Mohamed        | 1221307698       |
-| Balfaqih Ahmed                   | 1221304386       |
+|-----------------------------------|------------------|
+| Iusupov Alimzhan                  | 1231301318       |
+| Galal Osman Galal Mohamed         | 1221307698       |
+| Balfaqih Ahmed                    | 1221304386       |
 
 
 ## **1. Introduction**
@@ -1472,32 +1472,39 @@ in this document.
 
 ### **6.1 Validation Sessions**
 
-| **Session ID** | **Date and Time**     | **Technique** | **Section Reviewed** | **Participant & Role**                                               | **No. of Defect** |
+| **Session ID** | **Date and Time**     | **Technique** | **Section Reviewed**  | **Participant & Role**                                              | **No. of Defect** |
 |----------------|-----------------------|---------------|-----------------------|---------------------------------------------------------------------|-------------------|
-| VS-01          | 2/6/2025; 10am–2pm    | Inspection    | 2.1, 3.2, 3.3         | Alice (Inspector), Ben (Inspector), Chen (Moderator)                | 7                 |
-| VS-02          | 3/6/2025; 2pm–6pm     | Inspection    | 3.4, 3.5              | Chen (Inspector), Dana (Author), Ben (Presenter), Alice (Inspector) | 5                 |
+| VS-01          | 22/6/2025; 7am–1pm    | Inspection    | 3.1, 3.2, 3.3, 3.5    | Naqib                                                               | 4                 |
+| VS-00          | 3/6/2025; 2pm–6pm     | Inspection    | 3.4, 3.5              | Chen (Inspector), Dana (Author), Ben (Presenter), Alice (Inspector) | 5                 |
 
 
 ### **6.2 Defect Summary**
 
 #### **A. Content Defects**
 
-| **Req ID** | **Validation and Defect Description** | **Detected By** | **Comment/Suggested Fix**       | **Session ID** | **Severity (1–5)** |
-|-----------|----------------------------------------|-----------------|----------------------------------|----------------|--------------------|
-| REQ-001   | Missing acceptance criteria            | Alice           | Define measurable outcomes       | VS-01          | 4                  |
-| REQ-004   | “Fast” not defined                     | Ben             | ≤ 2s response time               | VS-01          | 3                  |
+| **Req ID** | **Section** | **Validation and Defect Description**                     | **Detected By** | **Comment/Suggested Fix**        | **Session ID** | **Severity (1–5)** |
+|------------|-------------|---------------------------------------------------------- |-----------------|----------------------------------|----------------|--------------------|
+| REQ-001    | 3.1.3       | The use case name doesn’t match the section title         | Naqib           | Rename Use Case ID to "Accessibility Issue Reporting"    | VS-01          | 3                  |
+| REQ-002    | 3.1.8       | The section title and use case describe unrelated actions | Naqib           | Rename Use Case ID to "Manage Event Information"         | VS-01          | 4                  |
+| -          | -           | Missing acceptance criteria                               | Example         | Define measurable outcomes       | VS-00          | 4                  |
+| -          | -           | Missing acceptance criteria                               | Example         | Define measurable outcomes       | VS-00          | 4                  |
+| -          | -           | “Fast” not defined                                        | Example         | ≤ 2s response time               | VS-00          | 3                  |
+
 
 #### **B. Documentation Defects**
 
-| **Page No.** | **Validation and Defect Description** | **Detected By** | **Comment/Suggested Fix** | **Session ID** | **Severity (1–5)** |
-|--------------|----------------------------------------|-----------------|----------------------------|----------------|--------------------|
-| Pg 3         | Outdated policy reference              | Chen            | Replace with Policy 102    | VS-02          | 2                  |
+| **Req ID** | **Section** | **Validation and Defect Description**  | **Detected By**  | **Comment/Suggested Fix** | **Session ID** | **Severity (1–5)** |
+|------------|-------------|----------------------------------------|-----------------|----------------------------|----------------|--------------------|
+| REQ-003    | 3.1.2       | Typo in title: “Routet”                | Naqib           | Change to “Route”          | VS-01          | 1                  |
+| -          | -           | Outdated policy reference              | Example         | Replace with Policy 102    | VS-00          | 2                  |
 
 #### **C. Agreement Defects**
 
-| **Req ID**  | **Validation Description / Stakeholder Concern** | **Mismatch**               | **Detected By** | **Session ID** | **Severity (1–5)** |
-|-------------|--------------------------------------------------|-----------------------------|-----------------|----------------|--------------------|
-| REQ-012     | 24/7 uptime without failover                     | Operational feasibility gap | Ben             | VS-02          | 5                  |
+| **Req ID** | **Section** | **Validation Description / Stakeholder Concern** | **Mismatch**               | **Detected By** | **Session ID** | **Severity (1–5)** |
+|------------|-------------|--------------------------------------------------|-----------------------------|-----------------|----------------|--------------------|
+| REQ-004    | 3.2.4       | 100+ updates per second seems unrealistic        | Not practical or feasible   | Naqib               | VS-01          | 5                  |
+| -          | -           | 24/7 uptime without failover                     | Operational feasibility gap | Example             | VS-00          | 5                  |
+
 
 
 ### **6.3 Conflict Analysis**
