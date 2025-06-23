@@ -6,6 +6,8 @@
 | DHARVIN DARAN A L ELANGOO                            | 1231303548     |
 | GOH YENG XUN                                         | 1231303430     |
 
+> _Supporting information is located in Section 6_
+
 >**CSE6224 SOFTWARE REQUIREMENTS ENGINEERING**
 >
 > **PROJECT PART 1**
