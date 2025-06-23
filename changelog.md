@@ -1,5 +1,5 @@
-# Changelog
+## Change Log
 
-| Date       | Author  | Description                                | Reason                           |
-|------------|---------|--------------------------------------------|----------------------------------|
-| 2025-06-21 |         | Created project-part-2 branch              | Start Part 2 work                |
+| **Change ID** | **Date**     | **Author** | **Summary of Change**                                    | **File(s) Affected**         |
+|---------------|--------------|------------|----------------------------------------------------------|------------------------------|
+| CH-01         | 2025-06-21   | Naqib      | Added complete Section 6 template (Validation part)      | SRS.md                       |
