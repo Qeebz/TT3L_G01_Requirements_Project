@@ -1109,9 +1109,10 @@ in this document.
 | **Name** | **Primary Responsibility**                                       | **No. of Sessions Participated** |
 | -------- | -----------------------------------------------------------------| -------------------------------- |
 | Naqib    | GitHub version control, changelog maintenance, conflict analysis | 2                                |
-| Ben      | GitHub version control, changelog maintenance, conflict logging  | 2                                |
-| Chen     | Conflict analysis, stakeholder concern tracking                  | 2                                |
+| Yeng Xun | Introduction section revision, markdown formatting, documentation defect resolution| 1              |
+| Dharvin  | Section 4 verification analysis, defect identification, summary documentation| 1                    |
 | Dana     | Documentation review, defect classification                      | 1                                |
+
 
 ---
 

@@ -1,6 +1,4 @@
-## Git Commit History
-
-_This section logs the Git commit history for traceability._
+## Changelog Git commit History
 
 ### Commits on 2025-06-23
 - 2025-06-23 by Qeebz: **Update and cleanup SRS.md**
