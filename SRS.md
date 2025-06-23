@@ -791,6 +791,18 @@ defined earlier. Verification focuses on ensuring the correctness,
 completeness, and usability of system features as experienced by all
 types of users.
 
+Functional Test Cases
+
+| **Function**                        | **Test Case** | **Input**           | **Expected Output** | **Pass Criteria**                                                           |
+| ---------------------------------- | ----------------- | -------------------- | ----------------------- | ---------------------------------------------------------------------------- |
+| Login (UC001)    | Enter valid MMU credentials       | Email: user@mmu.edu.my / Password: ****** | Redirect to home/dashboard screen            | Redirect within 3 seconds  |
+| Plan Route (UC002)   | Generate route with elevator outage scenario       | Start: Library / Destination: Hall A | Alternate accessible path suggested            | Route shown with accessibility indicators |
+| Report Issue (UC004) | Submit report with photo and description       | Form input + image   | Confirmation: “Report successfully submitted”            | Visible in admin dashboard within 30s                       |
+| View Events (UC003)              | Tap “Campus Events” and select an accessible one       | Tap + Accessibility filter | Event list shows only filtered events            | Details include venue, date, and accessibility                        |
+| Admin Updates (UC006)       | Add/update facility info from admin dashboard       | Input new event or edit report      | Updated info reflected in user route or event list                   | Verified in public-facing modules                         |
+
+Each test will be executed using manual and automated validation tools with expected behavior verified against functional requirements defined in Section 3.
+
 ### **4.2 Performance Verification**
 
 This section outlines the procedures to verify that the Campus
@@ -872,21 +884,10 @@ more than 5% of tests.
 
 ### **4.5 Logical Database Verification**
 
-[The logical database verification process involves systematic
-validation activities to ensure the database design meets specified
-system requirements and stakeholder expectations. These verification
-procedures focus on confirming proper database normalization to
-eliminate redundancy and maintain structural efficiency. Indexing
-strategies are evaluated to optimize query performance and data
-retrieval operations. Relationship integrity checks validate the correct
-implementation of primary and foreign key constraints across database
-tables. Security protocols are reviewed to confirm appropriate data
-protection measures are in place. These verification activities
-collectively ensure the database maintains data integrity, supports
-consistent operations, and delivers optimal performance. The process
-contributes to the system\'s overall reliability, scalability, and
-ability to effectively manage user interactions, content organization,
-and real-time data processing requirements.]{.mark}
+[The logical database verification process involves systematic validation activities to ensure the database design meets specified system requirements and stakeholder expectations. These verification procedures focus on confirming proper database normalization to eliminate redundancy and maintain structural efficiency. Indexing strategies are evaluated to optimize query performance and data retrieval operations. Relationship integrity checks validate the correct implementation of primary and foreign key constraints across database tables. 
+In addition, security verification activities are conducted to ensure sensitive data is protected. This includes encryption validation for fields such as passwords and personal information, as well as role-based access control (RBAC) testing to verify that users can only access data appropriate to their roles. These procedures help prevent unauthorized access, ensure compliance with data protection standards, and maintain the confidentiality of critical system information. 
+Together, these verification activities ensure the database maintains data integrity, supports consistent operations, and delivers optimal performance. The process contributes to the system's overall reliability, scalability, and ability to effectively manage user interactions, content organization, and real-time data processing requirements.
+]{.mark}
 
 ### **4.5.1 Verification Procedures**
 
