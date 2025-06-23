@@ -1098,9 +1098,9 @@ in this document.
 
 | **Req ID** | **Requirement Description** | **Linked Goal(s)** | **Feature(s)** | **Use Case(s)** | **Traceability Score (1–4)** | **Description**                                                           |
 | ---------- | --------------------------- | ------------------ | -------------- | --------------- | ---------------------------- | ------------------------------------------------------------------------- |
-| REQ-005    | System shall respond <2s for route generation    | RQ-01          | FN-02           | UC-02           | 4          | Strong links to response time, route planning, and verification           |
-| REQ-006    | Alerts should be delivered <10s                  | RQ-02	         | FN-03           | UC-06	         | 4          | Linked to alert use case and performance targets                          |
-| REQ-007    | Submit reports with photo and location within 5s | RQ-05	         | FN-04           | UC-03	         | 3          | Linked to reporting speed; may vary by device                             |
+| REQ-001    | System shall respond <2s for route generation    | RQ-01          | FN-02           | UC-02           | 4          | Strong links to response time, route planning, and verification           |
+| REQ-002    | Alerts should be delivered <10s                  | RQ-02	         | FN-03           | UC-06	         | 4          | Linked to alert use case and performance targets                          |
+| REQ-003    | Submit reports with photo and location within 5s | RQ-05	         | FN-04           | UC-03	         | 3          | Linked to reporting speed; may vary by device                             |
 
 ---
 
