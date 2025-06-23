@@ -1039,38 +1039,18 @@ in this document.
 
 ### **6.1 Validation Sessions**
 
-<<<<<<< HEAD
-| **Session ID** | **Date and Time**     | **Technique** | **Section Reviewed**  | **Participant & Role**                                              | **No. of Defect** |
-|----------------|-----------------------|---------------|-----------------------|---------------------------------------------------------------------|-------------------|
-| VS-01          | 22/6/2025; 7am–1pm    | Inspection    | 3.1, 3.2, 3.3, 3.4    | Naqib                                                               | 4                 |
-| VS-02          | 23/6/2025; 4pm-7pm    | Inspection    | 1.3.4                 | Naqib                                                               | 0                 |
-
-| VS-00          | 3/6/2025; 2pm–6pm     | Inspection    | 3.4, 3.5              | Chen (Inspector), Dana (Author), Ben (Presenter), Alice (Inspector) | 5                 |
-
-=======
-| **Session ID** | **Date and Time**  | **Technique** | **Section Reviewed** | **Participant & Role**                                              | **No. of Defect** |
-| -------------- | ------------------ | ------------- | -------------------- | ------------------------------------------------------------------- | ----------------- |
-| VS-01          | 22/6/2025; 7am–1pm | Inspection    | 3.1, 3.2, 3.3, 3.5   | Naqib                                                               | 4                 |
-| VS-02          | 22/6/2025; 5pm–7pm | Inspection    | 1.0–1.7 (Introduction)          | 
-Yeng Xun (Reviewer)                                                 | 5                 |
-| VS-02          | 22/6/2025; 2pm–4pm | Inspection    | 3.5–3.8              | Harith                                                              | 9                 |
-| VS-03          | 22/6/2025; 2pm–4pm | Inspection    | 4.0 – Verification   | Dharvin                                                             | 3                 |
->>>>>>> b454fe91bb7c1ba72e263e6dec6592f2b8d22229
+| **Session ID** | **Date and Time**  | **Technique** | **Section Reviewed**  | **Participant & Role**                                              | **No. of Defect** |
+| -------------- | ------------------ | ------------- | --------------------  | ------------------------------------------------------------------- | ----------------- |
+| VS-01          | 22/6/2025; 7am–1pm | Inspection    | 3.1, 3.2, 3.3, 3.5    | Naqib                                                               | 4                 |
+| VS-02          | 22/6/2025; 5pm–7pm | Inspection    | 1.0–1.7 (Introduction)| Yeng Xun (Reviewer)                                                 | 5                 |
+| VS-03          | 22/6/2025; 2pm–4pm | Inspection    | 3.5–3.8               | Harith                                                              | 9                 |
+| VS-04          | 22/6/2025; 2pm–4pm | Inspection    | 4.0 – Verification    | Dharvin                                                             | 3                 |
+| VS-05          | 23/6/2025; 4pm-7pm | Inspection    | 1.3.4                 | Naqib                                                               | 0                 |
 
 ### **6.2 Defect Summary**
 
 #### **A. Content Defects**
 
-<<<<<<< HEAD
-| **Req ID** | **Section** | **Validation and Defect Description**                     | **Detected By** | **Comment/Suggested Fix**        | **Session ID** | **Severity (1–5)** |
-|------------|-------------|---------------------------------------------------------- |-----------------|----------------------------------|----------------|--------------------|
-| REQ-001    | 3.1.3       | The use case name doesn’t match the section title         | Naqib           | Rename Use Case ID to "Accessibility Issue Reporting"    | VS-01          | 3                  |
-| REQ-002    | 3.1.8       | The section title and use case describe unrelated actions | Naqib           | Rename Use Case ID to "Manage Event Information"         | VS-01          | 4                  |
-
-| -          | -           | Missing acceptance criteria                               | Example         | Define measurable outcomes       | VS-00          | 4                  |
-| -          | -           | Missing acceptance criteria                               | Example         | Define measurable outcomes       | VS-00          | 4                  |
-| -          | -           | “Fast” not defined                                        | Example         | ≤ 2s response time               | VS-00          | 3                  |
-=======
 | **Req ID** | **Section** | **Validation and Defect Description**                     | **Detected By** | **Comment/Suggested Fix**                             | **Session ID** | **Severity (1–5)** |
 | ---------- | ----------- | --------------------------------------------------------- | --------------- | ----------------------------------------------------- | -------------- | ------------------ |
 | REQ-001    | 3.1.3       | The use case name doesn’t match the section title         | Naqib           | Rename Use Case ID to "Accessibility Issue Reporting" | VS-01          | 3                  |
@@ -1078,7 +1058,6 @@ Yeng Xun (Reviewer)                                                 | 5         
 | -          | -           | Missing acceptance criteria                               | Example         | Define measurable outcomes                            | VS-00          | 4                  |
 | -          | -           | Missing acceptance criteria                               | Example         | Define measurable outcomes                            | VS-00          | 4                  |
 | -          | -           | “Fast” not defined                                        | Example         | ≤ 2s response time                                    | VS-00          | 3                  |
->>>>>>> b454fe91bb7c1ba72e263e6dec6592f2b8d22229
 
 | **Req ID** | **Section** | **Defect Description**                   | **Detected By** | **Suggested Fix**                                        | **Session ID** | **Severity (1–5)** |
 | ---------- | ----------- | ---------------------------------------- | --------------- | -------------------------------------------------------- | -------------- | ------------------ |
@@ -1098,21 +1077,6 @@ Yeng Xun (Reviewer)                                                 | 5         
 
 #### **B. Documentation Defects**
 
-<<<<<<< HEAD
-| **Req ID** | **Section** | **Validation and Defect Description**  | **Detected By**  | **Comment/Suggested Fix** | **Session ID** | **Severity (1–5)** |
-|------------|-------------|----------------------------------------|-----------------|----------------------------|----------------|--------------------|
-| REQ-003    | 3.1.2       | Typo in title: “Routet”                | Naqib           | Change to “Route”          | VS-01          | 1                  |
-
-| -          | -           | Outdated policy reference              | Example         | Replace with Policy 102    | VS-00          | 2                  |
-
-#### **C. Agreement Defects**
-
-| **Req ID** | **Section** | **Validation Description / Stakeholder Concern** | **Mismatch**               | **Detected By** | **Session ID** | **Severity (1–5)** |
-|------------|-------------|--------------------------------------------------|-----------------------------|-----------------|----------------|--------------------|
-| REQ-004    | 3.2.4       | 100+ updates per second seems unrealistic        | Not practical or feasible   | Naqib               | VS-01          | 5                  |
-
-| -          | -           | 24/7 uptime without failover                     | Operational feasibility gap | Example             | VS-00          | 5                  |
-=======
 | **Req ID** | **Section** | **Validation and Defect Description** | **Detected By** | **Comment/Suggested Fix** | **Session ID** | **Severity (1–5)** |
 | ---------- | ----------- | ------------------------------------- | --------------- | ------------------------- | -------------- | ------------------ |
 | REQ-003    | 3.1.2       | Typo in title: “Routet”               | Naqib           | Change to “Route”         | VS-01          | 1                  |
@@ -1136,7 +1100,6 @@ Yeng Xun (Reviewer)                                                 | 5         
 | ---------- | ----------- | ------------------------------------------------ | --------------------------- | --------------- | -------------- | ------------------ |
 | REQ-004    | 3.2.4       | 100+ updates per second seems unrealistic        | Not practical or feasible   | Naqib           | VS-01          | 5                  |
 | -          | -           | 24/7 uptime without failover                     | Operational feasibility gap | Example         | VS-00          | 5                  |
->>>>>>> b454fe91bb7c1ba72e263e6dec6592f2b8d22229
 
 | **Req ID** | **Section** | **Validation Description / Stakeholder Concern**             | **Mismatch**                          | **Detected By** | **Session ID** | **Severity (1–5)** |
 | ---------- | ----------- | ------------------------------------------------------------ | ------------------------------------- | --------------- | -------------- | ------------------ |
@@ -1149,7 +1112,6 @@ Yeng Xun (Reviewer)                                                 | 5         
 
 ### **6.3 Conflict Analysis**
 
-<<<<<<< HEAD
 | **Conflict ID** | **Conflict Description**         | **Conflict Analysis**                                                                                                                                                 | **Stakeholders Involved** | **Session ID** |
 |-----------------|----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|----------------|
 | CF-01           | Performance vs cost tradeoff     | Interest conflict – Developers and testers wanted real-time facility data accuracy for alerts and navigation, while the integration team raised concerns about frequent downtime and delays from external systems | Dev Team, QA, Integration Team           | VS-02          |
@@ -1164,17 +1126,6 @@ Yeng Xun (Reviewer)                                                 | 5         
 | CF-01           | A backup method using previously saved (cached) data was implemented. If real-time updates are unavailable, the system shows cached info and informs the user. | Y                  | Users still get route guidance, even when live data is missing.         | Keeps the system reliable and user-friendly, even when external systems are down. |
 | CF-02           | Indoor navigation was deprioritized and moved to “Future Considerations” (post-launch). Current version only uses outdoor and static map data. | Y                  | 	Core navigation was delivered on time, with indoor support flagged for future upgrade.         | Avoided delays while keeping the door open for more advanced features later. |
 | CF-00           | Structured negotiation facilitated by the Scrum Master, including trade-off analysis and review of stakeholder priorities. | Y                  | Agreement reached to prioritize performance, with acceptable cost adjustments approved by the PO.         | The resolution process considered stakeholder goals and project constraints, resulting in a sustainable and well-justified agreement. |
-=======
-| **Conflict ID** | **Conflict Description**     | **Conflict Analysis**                                                                                                                                                                                                                                                                         | **Stakeholders Involved** | **Session ID** |
-| --------------- | ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | -------------- |
-| CF-01           | Performance vs cost tradeoff | Interest conflict – the QA and Development teams prioritized high performance, while the Product Owner (PO) emphasized minimizing costs. The underlying cause is differing role-based objectives: QA and Dev aim to ensure system reliability and responsiveness, while PO focuses on budget. | PO, QA, Dev Team          | VS-01          |
-
-### **6.4 Conflict Resolution**
-
-| **Conflict ID** | **Conflict Resolution Strategy**                                                                                           | **Resolved (Y/N)** | **Outcome (If Resolved)**                                                                         | **Justification**                                                                                                                     |
-| --------------- | -------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| CF-01           | Structured negotiation facilitated by the Scrum Master, including trade-off analysis and review of stakeholder priorities. | Y                  | Agreement reached to prioritize performance, with acceptable cost adjustments approved by the PO. | The resolution process considered stakeholder goals and project constraints, resulting in a sustainable and well-justified agreement. |
->>>>>>> b454fe91bb7c1ba72e263e6dec6592f2b8d22229
 
 ---
 
@@ -1189,44 +1140,28 @@ Yeng Xun (Reviewer)                                                 | 5         
 
 ### **6.6 Requirements Traceability Matrix**
 
-<<<<<<< HEAD
 | **Req ID** | **Requirement Description**   | **Linked Goal(s)** | **Feature(s)** | **Use Case(s)** | **Traceability Score (1–4)** | **Description**                                                             |
 |-----------|--------------------------------|--------------------|----------------|-----------------|------------------------------|-----------------------------------------------------------------------------|
 | REQ-005   | System shall respond <2s for route generation       | RQ-01          | FN-02           | 	UC-02           | 4         | Strong links to response time, route planning, and verification   |
 | REQ-006   | Alerts should be delivered <10s                     | RQ-02	         | FN-03           | UC-06	          | 4         | Linked to alert use case and performance targets                 |
 | REQ-007   | Submit reports with photo and location within 5s    | RQ-05	         | FN-04           | UC-03	          | 3         | Linked to reporting speed; may vary by device                 |
 
-=======
-| **Req ID** | **Requirement Description** | **Linked Goal(s)** | **Feature(s)** | **Use Case(s)** | **Traceability Score (1–4)** | **Description**                                                           |
-| ---------- | --------------------------- | ------------------ | -------------- | --------------- | ---------------------------- | ------------------------------------------------------------------------- |
-| REQ-001    | System shall respond <2s    | G1                 | F1             | UC-01           | 4                            | Linked to 3 artifacts with high confidence, correctness, and completeness |
-| REQ-004    | Real-time notifications     | G2                 | F3             | UC-04           | 3                            | Linked to 3 artifacts, but links may be basic or unverified               |
->>>>>>> b454fe91bb7c1ba72e263e6dec6592f2b8d22229
 
 ---
 
 ### **6.7 Roles in Validation & Management**
 
 | **Name** | **Primary Responsibility**                                      | **No. of Sessions Participated** |
-<<<<<<< HEAD
 |---------|------------------------------------------------------------------|----------------------------------|
 | Naqib   | GitHub version control, changelog maintenance, conflict analysis | 2                                |
 | Ben     | GitHub version control, changelog maintenance, conflict logging  | 2                                |
 | Chen    | Conflict analysis, stakeholder concern tracking                  | 2                                |
 | Dana    | Documentation review, defect classification                      | 1                                |
-=======
-| -------- | --------------------------------------------------------------- | -------------------------------- |
-| Alice    | Content validation, traceability matrix                         | 2                                |
-| Ben      | GitHub version control, changelog maintenance, conflict logging | 2                                |
-| Chen     | Conflict analysis, stakeholder concern tracking                 | 2                                |
-| Dana     | Documentation review, defect classification                     | 1                                |
->>>>>>> b454fe91bb7c1ba72e263e6dec6592f2b8d22229
 
 ---
 
 ### **6.8 Version Control & Configuration**
 
-<<<<<<< HEAD
 | **Repo Branch**          | **Key Files**                                                                 |
 |--------------------------|-------------------------------------------------------------------------------|
 | `project-part-2`         | - `SRS.md`: Working version of updated SRS                                    |
@@ -1238,14 +1173,3 @@ Yeng Xun (Reviewer)                                                 | 5         
 | **Change Log Entries Made by** | Naqib                                                           |
 
 
-=======
-| **Repo Branch**                         | **Key Files**                                               |
-| --------------------------------------- | ----------------------------------------------------------- |
-| `project-part-2`                        | - `SRS.md`: Working version of updated SRS                  |
-|                                         | - `TTXL_GX_SRS.doc`: Final version                          |
-|                                         | - `changelog.md`: Record of all requirement-related changes |
-|                                         |                                                             |
-| **Commits by StudentX**                 | XX                                                          |
-| **Pull Requests Merged by StudentX**    | XX                                                          |
-| **Change Log Entries Made by StudentX** | XX                                                          |
->>>>>>> b454fe91bb7c1ba72e263e6dec6592f2b8d22229
