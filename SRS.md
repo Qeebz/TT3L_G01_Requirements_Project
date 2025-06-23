@@ -1,6 +1,3 @@
-![](media/image2.png){width="6.267716535433071in"
-height="1.8333333333333333in"}
-
 > **CSE6224 SOFTWARE REQUIREMENTS ENGINEERING**
 >
 > **PROJECT PART 1**
@@ -69,8 +66,6 @@ CANS will be accessible on both desktop and mobile browsers, integrating with un
 
 CANS acts as a centralized, web-based platform connected to external systems via secure APIs. It bridges user input, facility data, and event scheduling through a unified, accessible interface.
 
-![](media/image3.png){width="6.283464566929134in"
-height="4.194444444444445in"}
 
 _Figure 2: System Context Diagram_
 
@@ -84,8 +79,6 @@ Key functions of the system (categorized by user role) include:
 - Report resolution workflows (Staff, Admin)
 - Role management, analytics, and system monitoring (Admins)
 
-![](media/image1.png){width="6.283464566929134in"
-height="7.083333333333333in"}
 
 (See Section 3.1.1–3.1.13 for full use cases)
 
@@ -476,12 +469,6 @@ ensure efficiency, learnability, and satisfaction for all user roles:
 
 ### The Entity-Relationship Diagram (ERD) for the Campus Accessibility Navigation System (CANS) provides a structured database model to manage accessibility-related data efficiently. The design includes core entities such as Users, Facilities, Events, Reports, Notifications, and Permissions, linked through defined relationships to ensure data integrity and streamlined operations. The User entity is categorized into Students, Staff, and Admins, enabling role-based access control and functionality. Users interact with Reports to document accessibility issues and with Events to track participation in campus activities. Facilities are managed by staff, with updates triggering Notifications to inform users of relevant changes. The Permissions entity enforces security by regulating access based on user roles. Primary and foreign keys maintain relational integrity, supporting efficient data retrieval and consistency. This ERD framework facilitates real-time navigation, event management, facility oversight, and user engagement, ensuring a cohesive and secure system for accessibility management.
 
-+-----------------------------------------------------------------------+
-| > ![](media/image4.png){width="7.499876421697288in" |
-| > height="4.760416666666667in"} |
-+-----------------------------------------------------------------------+
-| **ERD** |
-+=======================================================================+
 
 3.5.2 Relationship
 
