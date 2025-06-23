@@ -1,5 +1,8 @@
-## Change Log
-
-| **Change ID** | **Date**     | **Author** | **Summary of Change**                                    | **File(s) Affected**         |
-|---------------|--------------|------------|----------------------------------------------------------|------------------------------|
-| CH-01         | 2025-06-21   | Naqib      | Added complete Section 6 template (Validation part)      | SRS.md                       |
+- 2025-06-22 by Qeebz: Add validation defect for Sections 3.1–3.4
+- 2025-06-22 by Qeebz: Add team member table to SRS.md
+- 2025-06-22 by Qeebz: Add structured changelog entries for SRS updates
+- 2025-06-22 by Qeebz: Added complete Section 6 Validation template to SRS.md
+- 2025-06-22 by Qeebz: Added markdown version of SRS
+- 2025-06-21 by Qeebz: Added SRS.md and changelog.md to project-part-2
+- 2025-06-21 by Qeebz: Added SRS.md and changelog.md for project-part-2
+- 2025-06-21 by Qeebz: Added final SRS document for project-part-2
