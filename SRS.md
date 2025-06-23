@@ -1109,6 +1109,8 @@ in this document.
 | REQ-001    | System shall respond <2s for route generation    | RQ-01          | FN-02           | UC-02           | 4          | Strong links to response time, route planning, and verification           |
 | REQ-002    | Alerts should be delivered <10s                  | RQ-02	         | FN-03           | UC-06	         | 4          | Linked to alert use case and performance targets                          |
 | REQ-003    | Submit reports with photo and location within 5s | RQ-05	         | FN-04           | UC-03	         | 3          | Linked to reporting speed; may vary by device                             |
+| REQ-004     | System must maintain user data privacy               | RQ-07          | FN-08               | UC-07        | 5            | Tied to GDPR and IT policy compliance                                     |
+| REQ-005     | System shall integrate with facility/event systems   | RQ-04          | FN-06               | UC-01        | 4            | Supports automation and synchronization goals                             |
 
 ---
 
