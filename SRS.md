@@ -384,7 +384,7 @@ URL: [[https://nodejs.org/]{.underline}](https://nodejs.org/)
 
 4.  Managing Updates
 
-> The system should handle 10 updates per second (e.g., elevator
+> The system should handle 100+ updates per second (e.g., elevator
 > status changes) without delays.
 
 5.  Easy to Use on All Devices
@@ -476,15 +476,12 @@ ensure efficiency, learnability, and satisfaction for all user roles:
 
 ### The Entity-Relationship Diagram (ERD) for the Campus Accessibility Navigation System (CANS) provides a structured database model to manage accessibility-related data efficiently. The design includes core entities such as Users, Facilities, Events, Reports, Notifications, and Permissions, linked through defined relationships to ensure data integrity and streamlined operations. The User entity is categorized into Students, Staff, and Admins, enabling role-based access control and functionality. Users interact with Reports to document accessibility issues and with Events to track participation in campus activities. Facilities are managed by staff, with updates triggering Notifications to inform users of relevant changes. The Permissions entity enforces security by regulating access based on user roles. Primary and foreign keys maintain relational integrity, supporting efficient data retrieval and consistency. This ERD framework facilitates real-time navigation, event management, facility oversight, and user engagement, ensuring a cohesive and secure system for accessibility management.
 
-<<<<<<< HEAD
-=======
 +-----------------------------------------------------------------------+
 | > ![](media/image4.png){width="7.499876421697288in" |
 | > height="4.760416666666667in"} |
 +-----------------------------------------------------------------------+
 | **ERD** |
 +=======================================================================+
->>>>>>> b454fe91bb7c1ba72e263e6dec6592f2b8d22229
 
 3.5.2 Relationship
 
@@ -1042,10 +1039,11 @@ in this document.
 | **Session ID** | **Date and Time**  | **Technique** | **Section Reviewed**  | **Participant & Role**                                              | **No. of Defect** |
 | -------------- | ------------------ | ------------- | --------------------  | ------------------------------------------------------------------- | ----------------- |
 | VS-01          | 22/6/2025; 7am–1pm | Inspection    | 3.1, 3.2, 3.3, 3.5    | Naqib                                                               | 4                 |
-| VS-02          | 22/6/2025; 5pm–7pm | Inspection    | 1.0–1.7 (Introduction)| Yeng Xun (Reviewer)                                                 | 5                 |
-| VS-03          | 22/6/2025; 2pm–4pm | Inspection    | 3.5–3.8               | Harith                                                              | 9                 |
-| VS-04          | 22/6/2025; 2pm–4pm | Inspection    | 4.0 – Verification    | Dharvin                                                             | 3                 |
-| VS-05          | 23/6/2025; 4pm-7pm | Inspection    | 1.3.4                 | Naqib                                                               | 0                 |
+| VS-02          | 22/6/2025; 2pm–4pm | Inspection    | 3.5–3.8               | Harith                                                              | 9                 |
+| VS-03          | 22/6/2025; 2pm–4pm | Inspection    | 4.0                   | Dharvin                                                             | 3                 |
+| VS-04          | 22/6/2025; 5pm–7pm | Inspection    | 1.0–1.7               | Yeng Xun (Reviewer)                                                 | 5                 |
+| VS-05          | 23/6/2025; 4pm-8pm | Inspection    | 1.3.4                 | Naqib                                                               | 0                 |
+
 
 ### **6.2 Defect Summary**
 
@@ -1055,77 +1053,48 @@ in this document.
 | ---------- | ----------- | --------------------------------------------------------- | --------------- | ----------------------------------------------------- | -------------- | ------------------ |
 | REQ-001    | 3.1.3       | The use case name doesn’t match the section title         | Naqib           | Rename Use Case ID to "Accessibility Issue Reporting" | VS-01          | 3                  |
 | REQ-002    | 3.1.8       | The section title and use case describe unrelated actions | Naqib           | Rename Use Case ID to "Manage Event Information"      | VS-01          | 4                  |
-| -          | -           | Missing acceptance criteria                               | Example         | Define measurable outcomes                            | VS-00          | 4                  |
-| -          | -           | Missing acceptance criteria                               | Example         | Define measurable outcomes                            | VS-00          | 4                  |
-| -          | -           | “Fast” not defined                                        | Example         | ≤ 2s response time                                    | VS-00          | 3                  |
-
-| **Req ID** | **Section** | **Defect Description**                   | **Detected By** | **Suggested Fix**                                        | **Session ID** | **Severity (1–5)** |
-| ---------- | ----------- | ---------------------------------------- | --------------- | -------------------------------------------------------- | -------------- | ------------------ |
-| -          | 3.5         | ERD not referenced                       | harith          | Add note: “Refer to Section X or Appendix A for the ERD” | VS-02          | 2                  |
-| -          | 3.7         | Maintainability lacks method explanation | Harith          | Add: Inline comments, dev guide, version control, CI/CD  | VS-02          | 2                  |
-
-| **Req ID** | **Section** | **Defect Description**                   | **Detected By** | **Suggested Fix**                                        | **Session ID** | **Severity (1–5)** |
-| ---------- | ----------- | ---------------------------------------- | --------------- | -------------------------------------------------------- | -------------- | ------------------ |
-| REQ-V001          | 4.1         | Verification criteria for functional requirements are vague and generic                       | Dharvin          | Add specific test cases or user scenarios per function | VS-03          | 3                  |
-| REQ-V002          | 4.5         | No verification activity mentioned for database encryption or access control | Dharvin          | Include validation of encrypted data fields and authorized access tests  | VS-03          | 4                  |
-| REQ-V003          | 4.7         | Attributes like Maintainability and Reliability lack measurable validation methods | Dharvin          | Propose testable metrics or thresholds for system attributes  | VS-03          | 2                  |
-
-| **Req ID** | **Section** | **Validation and Defect Description**                | **Detected By** | **Comment/Suggested Fix**                               | **Session ID** | **Severity (1–5)** |
-|------------|-------------|------------------------------------------------------|-----------------|---------------------------------------------------------|----------------|--------------------|
-| REQ-005    | 1.1         | Purpose section lacks mention of non-functional goals | Yeng Xun        | Added brief mention of security and performance aspects | VS-02          | 3                  |
-| REQ-006    | 1.3.1       | Missing system context diagram                       | Yeng Xun        | Added placeholder “To be inserted”                     | VS-02          | 2                  |
+| REQ-003    | 3.5         | ERD not referenced                                        | Harith          | Add note: “Refer to Section X or Appendix A for the ERD” | VS-02       | 2                  |
+| REQ-004    | 3.7         | Maintainability lacks method explanation                  | Harith          | Add: Inline comments, dev guide, version control, CI/CD | VS-02        | 2                  |
+| REQ-005    | 4.1         | Verification criteria for functional requirements are vague and generic            | Dharvin   | Add specific test cases or user scenarios per function | VS-03 | 3            |
+| REQ-006    | 4.5         | No verification activity mentioned for database encryption or access control       | Dharvin   | Include validation of encrypted data fields and authorized access tests  | VS-03 | 4 |
+| REQ-007    | 4.7         | Attributes like Maintainability and Reliability lack measurable validation methods | Dharvin   | Propose testable metrics or thresholds for system attributes  | VS-03    | 2   |
+| REQ-008    | 1.1         | Purpose section lacks mention of non-functional goals | Yeng Xun        | Added brief mention of security and performance aspects | VS-04          | 3                  |
+| REQ-009    | 1.3.1       | Missing system context diagram                        | Yeng Xun        | Added placeholder “To be inserted”                      | VS-04          | 2                  |
 
 #### **B. Documentation Defects**
 
 | **Req ID** | **Section** | **Validation and Defect Description** | **Detected By** | **Comment/Suggested Fix** | **Session ID** | **Severity (1–5)** |
 | ---------- | ----------- | ------------------------------------- | --------------- | ------------------------- | -------------- | ------------------ |
-| REQ-003    | 3.1.2       | Typo in title: “Routet”               | Naqib           | Change to “Route”         | VS-01          | 1                  |
-| -          | -           | Outdated policy reference             | Example         | Replace with Policy 102   | VS-00          | 2                  |
-
-| **Req ID** | **Section** | **Validation and Defect Description**             | **Detected By** | **Comment/Suggested Fix**      | **Session ID** | **Severity (1–5)** |
-| ---------- | ----------- | ------------------------------------------------- | --------------- | ------------------------------ | -------------- | ------------------ |
-| -          | 3.5         | “Stuff Table” label used instead of “Staff Table” | Harith          | Correct label to “Staff Table” | VS-02          | 2                  |
-| -          | 3.5         | “Filed Name” typo repeated in multiple tables     | Harith          | Replace with “Field Name”      | VS-02          | 2                  |
-| -          | 3.8         | Kano summary hard to read                         |
-
-| **Req ID** | **Section** | **Validation and Defect Description**      | **Detected By** | **Comment/Suggested Fix**                       | **Session ID** | **Severity (1–5)** |
-|------------|-------------|--------------------------------------------|-----------------|-------------------------------------------------|----------------|--------------------|
-| REQ-007    | 1.1         | Inconsistent list format under "Primary Goals" | Yeng Xun        | Reworded lists with uniform bullets and clarity | VS-02          | 2                  |
-| REQ-008    | 1.6         | UI subsections inconsistent in heading format | Yeng Xun        | Reorganized 1.6.1 and 1.6.2 into parallel style  | VS-02          | 1                  |
-| REQ-009    | 3.5.3.2     | Typo in table name “Stuff Table”            | Yeng Xun        | Corrected to “Staff Table”                      | VS-02          | 1                  |
+| REQ-010    | 3.1.2       | Typo in title: “Routet”               | Naqib           | Change to “Route”         | VS-01          | 1                  |
+| REQ-011    | 3.5         | “Stuff Table” label used instead of “Staff Table” | Harith          | Correct label to “Staff Table” | VS-02          | 2                  |
+| REQ-012    | 3.5         | “Filed Name” typo repeated in multiple tables     | Harith          | Replace with “Field Name”      | VS-02          | 2                  |
+| REQ-013    | 3.8         | Kano summary hard to read                         | Harith          | -                              | VS-02          | 2                  |
+| REQ-014    | 1.1         | Inconsistent list format under "Primary Goals" | Yeng Xun       | Reworded lists with uniform bullets and clarity | VS-04 | 2                  |
+| REQ-015    | 1.6         | UI subsections inconsistent in heading format | Yeng Xun        | Reorganized 1.6.1 and 1.6.2 into parallel style | VS-04 | 1                  |
+| REQ-016    | 3.5.3.2     | Typo in table name “Stuff Table”            | Yeng Xun          | Corrected to “Staff Table”                      | VS-04 | 1                  |
 
 #### **C. Agreement Defects**
 
 | **Req ID** | **Section** | **Validation Description / Stakeholder Concern** | **Mismatch**                | **Detected By** | **Session ID** | **Severity (1–5)** |
 | ---------- | ----------- | ------------------------------------------------ | --------------------------- | --------------- | -------------- | ------------------ |
-| REQ-004    | 3.2.4       | 100+ updates per second seems unrealistic        | Not practical or feasible   | Naqib           | VS-01          | 5                  |
-| -          | -           | 24/7 uptime without failover                     | Operational feasibility gap | Example         | VS-00          | 5                  |
-
-| **Req ID** | **Section** | **Validation Description / Stakeholder Concern**             | **Mismatch**                          | **Detected By** | **Session ID** | **Severity (1–5)** |
-| ---------- | ----------- | ------------------------------------------------------------ | ------------------------------------- | --------------- | -------------- | ------------------ |
-| -          | 3.7         | Security & accessibility included but not linked to feedback | No justification from user side       | Harith          | VS-02          | 3                  |
-| -          | 3.8         | No comment on low stakeholder diversity                      | Missing follow-up on limited feedback | Harith          | VS-02          | 3                  |
-
-| **Req ID** | **Section** | **Validation Description / Stakeholder Concern** | **Mismatch**           | **Detected By** | **Session ID** | **Severity (1–5)** |
-|------------|-------------|--------------------------------------------------|-------------------------|-----------------|----------------|--------------------|
-| —          | —           | No stakeholder disagreement found in Introduction | —                       | Yeng Xun        | VS-02          | —                  |
+| REQ-017    | 3.2.4       | 100+ updates per second seems unrealistic        | Not practical or feasible   | Naqib           | VS-01          | 5                  |
+| REQ-018    | 3.7         | Security & accessibility included but not linked to feedback | No justification from user side       | Harith     | VS-02          | 3                  |
+| REQ-019    | 3.8         | No comment on low stakeholder diversity                      | Missing follow-up on limited feedback | Harith     | VS-02          | 3                  |
+| REQ-020    | 1.0         | No stakeholder disagreement found in Introduction            | -                                     | Yeng Xun   | VS-02          | 4                  |
 
 ### **6.3 Conflict Analysis**
 
-| **Conflict ID** | **Conflict Description**         | **Conflict Analysis**                                                                                                                                                 | **Stakeholders Involved** | **Session ID** |
-|-----------------|----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|----------------|
+| **Conflict ID** | **Conflict Description**     | **Conflict Analysis**                                                                                                                                                                                                                                                                         | **Stakeholders Involved** | **Session ID** |
+| --------------- | ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | -------------- |
 | CF-01           | Performance vs cost tradeoff     | Interest conflict – Developers and testers wanted real-time facility data accuracy for alerts and navigation, while the integration team raised concerns about frequent downtime and delays from external systems | Dev Team, QA, Integration Team           | VS-02          |
 | CF-02           | Indoor Navigation Accuracy vs System Complexity     | The team wanted to support indoor navigation (e.g., inside multi-story buildings), but current system capabilities are limited and do not include advanced indoor positioning. Implementing this would require complex infrastructure and delay the project timeline. | Developers, Product Owner, Admins           | VS-02          |
-| CF-00           | Performance vs cost tradeoff     | Interest conflict – the QA and Development teams prioritized high performance, while the Product Owner (PO) emphasized minimizing costs. The underlying cause is differing role-based objectives: QA and Dev aim to ensure system reliability and responsiveness, while PO focuses on budget. | PO, QA, Dev Team           | VS-00          |
-
 
 ### **6.4 Conflict Resolution**
 
-| **Conflict ID** | **Conflict Resolution Strategy**                                                                                          | **Resolved (Y/N)** | **Outcome (If Resolved)**                                                                                 | **Justification**                                                                                                                |
-|-----------------|----------------------------------------------------------------------------------------------------------------------------|--------------------|-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| **Conflict ID** | **Conflict Resolution Strategy**                                                                                           | **Resolved (Y/N)** | **Outcome (If Resolved)**                                                                         | **Justification**                                                                                                                     |
+| --------------- | -------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | CF-01           | A backup method using previously saved (cached) data was implemented. If real-time updates are unavailable, the system shows cached info and informs the user. | Y                  | Users still get route guidance, even when live data is missing.         | Keeps the system reliable and user-friendly, even when external systems are down. |
 | CF-02           | Indoor navigation was deprioritized and moved to “Future Considerations” (post-launch). Current version only uses outdoor and static map data. | Y                  | 	Core navigation was delivered on time, with indoor support flagged for future upgrade.         | Avoided delays while keeping the door open for more advanced features later. |
-| CF-00           | Structured negotiation facilitated by the Scrum Master, including trade-off analysis and review of stakeholder priorities. | Y                  | Agreement reached to prioritize performance, with acceptable cost adjustments approved by the PO.         | The resolution process considered stakeholder goals and project constraints, resulting in a sustainable and well-justified agreement. |
 
 ---
 
@@ -1140,36 +1109,33 @@ in this document.
 
 ### **6.6 Requirements Traceability Matrix**
 
-| **Req ID** | **Requirement Description**   | **Linked Goal(s)** | **Feature(s)** | **Use Case(s)** | **Traceability Score (1–4)** | **Description**                                                             |
-|-----------|--------------------------------|--------------------|----------------|-----------------|------------------------------|-----------------------------------------------------------------------------|
-| REQ-005   | System shall respond <2s for route generation       | RQ-01          | FN-02           | 	UC-02           | 4         | Strong links to response time, route planning, and verification   |
-| REQ-006   | Alerts should be delivered <10s                     | RQ-02	         | FN-03           | UC-06	          | 4         | Linked to alert use case and performance targets                 |
-| REQ-007   | Submit reports with photo and location within 5s    | RQ-05	         | FN-04           | UC-03	          | 3         | Linked to reporting speed; may vary by device                 |
-
+| **Req ID** | **Requirement Description** | **Linked Goal(s)** | **Feature(s)** | **Use Case(s)** | **Traceability Score (1–4)** | **Description**                                                           |
+| ---------- | --------------------------- | ------------------ | -------------- | --------------- | ---------------------------- | ------------------------------------------------------------------------- |
+| REQ-005    | System shall respond <2s for route generation    | RQ-01          | FN-02           | UC-02           | 4          | Strong links to response time, route planning, and verification           |
+| REQ-006    | Alerts should be delivered <10s                  | RQ-02	         | FN-03           | UC-06	         | 4          | Linked to alert use case and performance targets                          |
+| REQ-007    | Submit reports with photo and location within 5s | RQ-05	         | FN-04           | UC-03	         | 3          | Linked to reporting speed; may vary by device                             |
 
 ---
 
 ### **6.7 Roles in Validation & Management**
 
-| **Name** | **Primary Responsibility**                                      | **No. of Sessions Participated** |
-|---------|------------------------------------------------------------------|----------------------------------|
-| Naqib   | GitHub version control, changelog maintenance, conflict analysis | 2                                |
-| Ben     | GitHub version control, changelog maintenance, conflict logging  | 2                                |
-| Chen    | Conflict analysis, stakeholder concern tracking                  | 2                                |
-| Dana    | Documentation review, defect classification                      | 1                                |
+| **Name** | **Primary Responsibility**                                       | **No. of Sessions Participated** |
+| -------- | -----------------------------------------------------------------| -------------------------------- |
+| Naqib    | GitHub version control, changelog maintenance, conflict analysis | 2                                |
+| Ben      | GitHub version control, changelog maintenance, conflict logging  | 2                                |
+| Chen     | Conflict analysis, stakeholder concern tracking                  | 2                                |
+| Dana     | Documentation review, defect classification                      | 1                                |
 
 ---
 
 ### **6.8 Version Control & Configuration**
 
-| **Repo Branch**          | **Key Files**                                                                 |
-|--------------------------|-------------------------------------------------------------------------------|
-| `project-part-2`         | - `SRS.md`: Working version of updated SRS                                    |
-|                          | - `TT3L_G6_SRS.doc`: Final version                                            |
-|                          | - `changelog.md`: Record of all requirement-related changes                   |
-|                          |                                                                               |
-| **Commits by**                 | All                                                             |
-| **Pull Requests Merged by**    | Naqib                                                           |
-| **Change Log Entries Made by** | Naqib                                                           |
-
-
+| **Repo Branch**                         | **Key Files**                                               |
+| --------------------------------------- | ----------------------------------------------------------- |
+| `project-part-2`                        | - `SRS.md`: Working version of updated SRS                  |
+|                                         | - `TTXL_GX_SRS.doc`: Final version                          |
+|                                         | - `changelog.md`: Record of all requirement-related changes |
+|                                         |                                                             |
+| **Commits by**                          | All                                                         |
+| **Pull Requests Merged by**             | Naqib                                                       |
+| **Change Log Entries Made by**          | Naqib                                                       |
