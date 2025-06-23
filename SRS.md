@@ -1,4 +1,12 @@
-> **CSE6224 SOFTWARE REQUIREMENTS ENGINEERING**
+### Revised and Updated by
+| **NAME**                                             | **STUDENT ID** |
+|------------------------------------------------------|----------------|
+| MUHAMMAD NAQIB BIN ZULL AZRI                         | 1211112306     |
+| MUHAMMAD HARITH AIMAN BIN MUHD ZULKAPLI              | 1211112350     |
+| DHARVIN DARAN A L ELANGOO                            | 1231303548     |
+| GOH YENG XUN                                         | 1231303430     |
+
+>**CSE6224 SOFTWARE REQUIREMENTS ENGINEERING**
 >
 > **PROJECT PART 1**
 
@@ -1055,7 +1063,7 @@ in this document.
 | REQ-010    | 3.1.2       | Typo in title: “Routet”               | Naqib           | Change to “Route”         | VS-01          | 1                  |
 | REQ-011    | 3.5         | “Stuff Table” label used instead of “Staff Table” | Harith          | Correct label to “Staff Table” | VS-02          | 2                  |
 | REQ-012    | 3.5         | “Filed Name” typo repeated in multiple tables     | Harith          | Replace with “Field Name”      | VS-02          | 2                  |
-| REQ-013    | 3.8         | Kano summary hard to read                         | Harith          | -                              | VS-02          | 2                  |
+| REQ-013    | 3.8         | Kano summary hard to read                         | Harith          | Use simple table format with clear headings like Category, Description, and Example to improve readability                             | VS-02          | 2                  |
 | REQ-014    | 1.1         | Inconsistent list format under "Primary Goals" | Yeng Xun       | Reworded lists with uniform bullets and clarity | VS-04 | 2                  |
 | REQ-015    | 1.6         | UI subsections inconsistent in heading format | Yeng Xun        | Reorganized 1.6.1 and 1.6.2 into parallel style | VS-04 | 1                  |
 | REQ-016    | 3.5.3.2     | Typo in table name “Stuff Table”            | Yeng Xun          | Corrected to “Staff Table”                      | VS-04 | 1                  |
@@ -1111,7 +1119,7 @@ in this document.
 | Naqib    | GitHub version control, changelog maintenance, conflict analysis | 2                                |
 | Yeng Xun | Introduction section revision, markdown formatting, documentation defect resolution| 1              |
 | Dharvin  | Section 4 verification analysis, defect identification, summary documentation| 1                    |
-| Dana     | Documentation review, defect classification                      | 1                                |
+| Harith     | Documentation review, defect classification                      | 1                                |
 
 
 ---
@@ -1121,7 +1129,7 @@ in this document.
 | **Repo Branch**                         | **Key Files**                                               |
 | --------------------------------------- | ----------------------------------------------------------- |
 | `project-part-2`                        | - `SRS.md`: Working version of updated SRS                  |
-|                                         | - `TTXL_GX_SRS.doc`: Final version                          |
+|                                         | - `TT3L_G6_SRS.doc`: Final version                          |
 |                                         | - `changelog.md`: Record of all requirement-related changes |
 |                                         |                                                             |
 | **Commits by**                          | All                                                         |
